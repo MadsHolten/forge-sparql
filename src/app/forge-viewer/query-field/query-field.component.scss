@@ -1,0 +1,8 @@
+.query-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .query-container > * {
+    width: 100%;
+  }

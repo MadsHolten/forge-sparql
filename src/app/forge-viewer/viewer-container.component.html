@@ -1,0 +1,39 @@
+<div class="viewerContainer">
+    <horizontal-split-pane 
+            #box1 
+            primary-component-minsize="200"
+            secondary-component-minsize="200"
+            local-storage-key="split-pane" 
+            (on-ended-resizing)="onHChange()">
+        <div class="split-pane-content-primary" #mainContentPane style="height: 100%;">
+            <div class="upper">
+                <forge-viewer [filterByURIs]="filterByURIs" [urn]="urn" (selectedObject)="setSelectedObject($event)"></forge-viewer>
+            </div>
+        </div>
+        <div class="split-pane-content-secondary" style="height:100%;">
+            <div class="lower">
+                <vertical-split-pane 
+                        primary-component-minsize="35"
+                        secondary-component-minsize="35"
+                        primary-component-initialratio="0.5"
+                        (on-ended-resizing)="onVChange()">
+                    <div class="split-pane-content-primary">
+                        <div class="left">
+                            <query-field
+                                [projectDB]="projectDB"
+                                (queryResult)="queryResult = $event"
+                                (returnedURIs)="filterByURIs = $event"
+                                (queryTime)="queryTime = $event">
+                            </query-field>
+                        </div>
+                    </div>
+                    <div class="split-pane-content-secondary">
+                        <div class="right">
+                            <result-table [queryResult]="queryResult" [queryTime]="queryTime"></result-table>
+                        </div>
+                    </div>
+                </vertical-split-pane>
+            </div>
+        </div>
+    </horizontal-split-pane>
+</div>

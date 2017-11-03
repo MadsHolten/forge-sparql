@@ -1,0 +1,23 @@
+<mat-card>
+  <div class="query-container">
+    <mat-card-title>Query</mat-card-title>
+    <div>
+      <mat-slide-toggle style="padding-top: 25px" [(ngModel)]="reasoning">Reasoning</mat-slide-toggle>
+      <span fxFlex="grow"></span>
+      <mat-form-field fxFlex="70%">
+        <mat-select placeholder="Predefined queries" (change)="query = $event.value">
+          <mat-option *ngFor="let q of testQueries" [value]="q.query">
+            {{ q.title }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <mat-form-field style="padding-top: 25px">
+      <textarea matInput placeholder="Query field" rows="9" [(ngModel)]="query"></textarea>
+    </mat-form-field>
+    <div>
+      <button mat-raised-button fxFlex="50" (click)="performQuery()">Go!</button>
+      <button mat-raised-button fxFlex="50" (click)="clear()">Clear</button>
+    </div>
+  </div>
+</mat-card>
