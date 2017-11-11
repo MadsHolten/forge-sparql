@@ -3,6 +3,7 @@ const ForgeSDK = require('forge-apis');     //To communicate with the Forge API
 const bodyParser = require('body-parser');  //For parsing request body
 const cors = require('cors');               //Handles Cross Origin Resource Sharing
 const rp = require('request-promise');      //NB! NOT USED
+const config = require('../config.json')
 
 var app = express();
 
@@ -10,6 +11,7 @@ var app = express();
 var authRoutes = require('./routes/auth');
 var bucketRoutes = require('./routes/bucket');
 var objectRoutes = require('./routes/object');
+var endpointRoutes = require('./routes/endpoint');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -17,7 +19,8 @@ app.use(cors()); //Cross Origin Resource Sharing
 
 var staticRoot = './dist';
 
-app.set('port', (process.env.PORT || 3001));  
+//Either get port from environment variable or config file
+app.set('port', (process.env.PORT || config.port));  
 
 //Static files location
 app.use(express.static(staticRoot));
@@ -57,6 +60,12 @@ app.use('/api', bucketRoutes);
  * DELETE   /bucket/:bKey/object/:oKey              Delete bucket
  */
 app.use('/api', objectRoutes);
+/**
+ * SPARQL endpoint routes
+ * GET      /endpoint               Do get query (query as URL parameters)
+ * POST     /endpoint               Do get query (query as body element)
+ */
+app.use('/endpoint', endpointRoutes);
 
 //Handle errors
 app.use((err, req, res, next) => {

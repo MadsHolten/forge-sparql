@@ -5,7 +5,8 @@ import * as _ from 'lodash';
 import { Observable }   from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
-import { ServicesConfig } from './config';
+
+import { ServicesConfig } from '../config/backends';
 
 @Injectable()
 export class ForgeObjectService {

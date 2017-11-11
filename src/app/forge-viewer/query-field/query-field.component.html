@@ -2,7 +2,7 @@
   <div class="query-container">
     <mat-card-title>Query</mat-card-title>
     <div>
-      <mat-slide-toggle style="padding-top: 25px" [(ngModel)]="reasoning">Reasoning</mat-slide-toggle>
+      <mat-slide-toggle style="padding-top: 25px" disabled="true" [(ngModel)]="reasoning">Reasoning</mat-slide-toggle>
       <span fxFlex="grow"></span>
       <mat-form-field fxFlex="70%">
         <mat-select placeholder="Predefined queries" (change)="query = $event.value">

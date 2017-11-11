@@ -1,0 +1,16 @@
+@prefix ice:  	<https://example.com/ice#> .
+@prefix cdt:    <http://w3id.org/lindt/custom_datatypes#> .
+
+<http://localhost//100100/Rooms/f09e0014-4e53-42bf-aa26-9191750057ef-0004b3ac> ice:heatingDemand "200 W"^^cdt:ucum .
+<http://localhost//100100/Rooms/f09e0014-4e53-42bf-aa26-9191750057ef-0004b3af> ice:heatingDemand "300 W"^^cdt:ucum .
+<http://localhost//100100/Rooms/f09e0014-4e53-42bf-aa26-9191750057ef-0004b3b2> ice:heatingDemand "250 W"^^cdt:ucum .
+<http://localhost//100100/Rooms/f09e0014-4e53-42bf-aa26-9191750057ef-0004b3b8> ice:heatingDemand "600 W"^^cdt:ucum .
+<http://localhost//100100/Rooms/f09e0014-4e53-42bf-aa26-9191750057ef-0004b3bf> ice:heatingDemand "210 W"^^cdt:ucum .
+<http://localhost//100100/Rooms/f09e0014-4e53-42bf-aa26-9191750057ef-0004b3c2> ice:heatingDemand "700 W"^^cdt:ucum .
+<http://localhost//100100/Rooms/f09e0014-4e53-42bf-aa26-9191750057ef-0004b3c5> ice:heatingDemand "800 W"^^cdt:ucum .
+<http://localhost//100100/Rooms/f09e0014-4e53-42bf-aa26-9191750057ef-0004b3c8> ice:heatingDemand "900 W"^^cdt:ucum .
+<http://localhost//100100/Rooms/f09e0014-4e53-42bf-aa26-9191750057ef-0004b3cb> ice:heatingDemand "150 W"^^cdt:ucum .
+<http://localhost//100100/Rooms/f09e0014-4e53-42bf-aa26-9191750057ef-0004b3ce> ice:heatingDemand "220 W"^^cdt:ucum .
+<http://localhost//100100/Rooms/f09e0014-4e53-42bf-aa26-9191750057ef-0004b3d1> ice:heatingDemand "370 W"^^cdt:ucum .
+<http://localhost//100100/Rooms/f09e0014-4e53-42bf-aa26-9191750057ef-0004b3d4> ice:heatingDemand "100 W"^^cdt:ucum .
+<http://localhost//100100/Rooms/f09e0014-4e53-42bf-aa26-9191750057ef-0004b3d7> ice:heatingDemand "600 W"^^cdt:ucum .

@@ -1,0 +1,22 @@
+{
+  "name": "sparql-endpoint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node index.js"
+  },
+  "author": "Mads Holten Rasmussen <mhoras@byg.dtu.dk> (http://www.dtu.dk/service/telefonbog/person?id=42843&cpid=202565&tab=3&qt=dtuprojectquery)",
+  "license": "ISC",
+  "engines": {
+    "node": "6.9.1"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "lodash": "^4.17.4",
+    "rdfstore": "^0.9.17"
+  }
+}

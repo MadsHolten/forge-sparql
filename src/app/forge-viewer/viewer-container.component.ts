@@ -113,4 +113,8 @@ export class ViewerContainerComponent implements OnInit {
         console.log("Changed V pane");
     }
 
+    log(ev){
+        console.log(ev);
+    }
+
 }

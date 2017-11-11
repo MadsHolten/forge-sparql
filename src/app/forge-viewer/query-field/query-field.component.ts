@@ -19,25 +19,25 @@ export interface TestQuery {
 
 export class QueryFieldComponent {
 
-  query: string = "SELECT ?s\nWHERE {\n\tGRAPH ?g {\n\t\t?s a bot:Space .\n\t}\n}";
+  query: string = "SELECT ?s\nWHERE {\n\t?s a bot:Space .\n}";
   reasoning: boolean = false;
 
   testQueries: TestQuery[] = [
     { 
       title: 'All elements with adjacency to a specific space',
-      query: 'SELECT ?spaceName ?element\nWHERE {\n\tGRAPH ?g {\n\t\t?space a bot:Space ;\n\t\t\trdfs:label ?spaceName ;\n\t\t\tbot:adjacentElement ?element .\n\t\tFILTER(?spaceName = "Room 2")\n\t}\n}'
+      query: 'SELECT ?spaceName ?element\nWHERE {\n\t?space a bot:Space ;\n\t\trdfs:label ?spaceName ;\n\t\tbot:adjacentElement ?element .\n\tFILTER(?spaceName = "Room 2")\n}'
     },
     {
       title: 'All rooms from a Revit a model with both spaces and rooms',
-      query: 'SELECT ?URI ?name\nWHERE {\n\tGRAPH ?g {\n\t\t?URI a bot:Space ;\n\t\t\trdfs:label ?name .\n\t\tFILTER regex(str(?URI), "Rooms")\n\t}\n}'
+      query: 'SELECT ?URI ?name\nWHERE {\n\t?URI a bot:Space ;\n\t\trdfs:label ?name .\n\tFILTER regex(str(?URI), "Rooms")\n}'
     },
     {
       title: 'All elements that are hosted by other elements',
-      query: 'SELECT ?element ?name\nWHERE {\n\tGRAPH ?g {\n\t\t?a bot:hostsElement ?element .\n\t\t?element rdfs:label ?name\n\t}\n}'
+      query: 'SELECT ?element ?name\nWHERE {\n\t?a bot:hostsElement ?element .\n\t?element rdfs:label ?name\n}'
     },
     {
       title: 'Rooms and their areas and volumes',
-      query: 'PREFIX nir:\t<https://Niras.dk/XXXX#>\n\nSELECT ?room ?area ?volume\nWHERE {\n\tGRAPH ?g {\n\t\t?s a bot:Space ;\n\t\t\trdfs:label ?room ;\n\t\t\tnir:space_area ?area ;\n\t\t\tnir:space_volumen ?volume .\n\t}\n}'
+      query: 'PREFIX nir:\t<https://Niras.dk/XXXX#>\n\nSELECT ?room ?area ?volume\nWHERE {\n\t?s a bot:Space ;\n\t\trdfs:label ?room ;\n\t\tnir:space_area ?area ;\n\t\tnir:space_volumen ?volume .\n}'
     }
   ]
 

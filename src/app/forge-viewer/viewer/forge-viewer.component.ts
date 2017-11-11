@@ -44,7 +44,6 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
   ngOnChanges(changes: SimpleChanges){
     if(this.filterByURIs && changes.filterByURIs.currentValue){
       var URIs = changes.filterByURIs.currentValue;
-      console.log(URIs);
       //Generate promises for all searches
       var promises = [];
       for(var i in URIs){
@@ -54,11 +53,14 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
       Promise.all(promises)
         .then(d => {
           var ids = _.chain(d).flatten().uniq().value();
-          console.log(ids);
           this.viewer.isolateById(ids)
-          //load the extension 
-          this.viewer.loadExtension('Autodesk.ADN.Viewing.Extension.Color');
-          this.viewer.setColorMaterial(ids,0xff0000); 
+
+          /**COLORS NOT WORKING */
+          // //load the extension 
+          // this.viewer.loadExtension('Autodesk.ADN.Viewing.Extension.Color');
+          // this.viewer.setColorMaterial(ids,0xff0000);
+          
+          
         })
     }
   }

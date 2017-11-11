@@ -1,17 +1,17 @@
 import { Injectable }   from '@angular/core';
-import { Http, Response, RequestOptions, Headers } from '@angular/http';
+import { Http, Response, RequestOptions, Headers, URLSearchParams } from '@angular/http';
 import { HttpRequest, HttpClient }   from '@angular/common/http';
 
 import * as _ from 'underscore';
 import { Observable }   from 'rxjs/Observable';
-import { ServicesConfig } from './config';
+
+import { ServicesConfig } from '../config/backends';
 
 @Injectable()
 export class TriplestoreService {
     private host = ServicesConfig.triplestoreURL
     private port = ServicesConfig.triplestorePort
-    private baseURL = this.host+':'+this.port+'/';
-    private projectsURL = this.baseURL+'project';
+    private baseURL = this.host+':'+this.port+'/endpoint';
     private acceptJSONLD; // Options to accept JSON-LD
     
 
@@ -27,6 +27,7 @@ export class TriplestoreService {
 
     //Get query
     public getQuery(db, query, queryType?) {
+        // define headers
         var opts;
         if(queryType == 'select'){
             let headers = new Headers({ 'Accept': 'application/json' });
@@ -35,9 +36,13 @@ export class TriplestoreService {
         }else{
             opts = this.acceptJSONLD;
         }
-        var body = {query: query};
+        // define search parameters
+        let urlSearchParams = new URLSearchParams();
+        urlSearchParams.append('query', query);
+        
+        opts.search = urlSearchParams;
         return this.http
-                .post(this.baseURL+db+'/admin/getTriples',body,opts)
+                .get(this.baseURL,opts)
                 .map(res => res.json())
                 .catch(this.handleError);
     }

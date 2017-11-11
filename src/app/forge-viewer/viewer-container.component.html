@@ -7,7 +7,7 @@
             (on-ended-resizing)="onHChange()">
         <div class="split-pane-content-primary" #mainContentPane style="height: 100%;">
             <div class="upper">
-                <forge-viewer [filterByURIs]="filterByURIs" [urn]="urn" (selectedObject)="setSelectedObject($event)"></forge-viewer>
+                <forge-viewer [filterByURIs]="filterByURIs" [urn]="urn" (selectedObject)="log($event)"></forge-viewer>
             </div>
         </div>
         <div class="split-pane-content-secondary" style="height:100%;">
