@@ -1,28 +1,17 @@
-# NgForge
+# Forge SPARQL
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.1.
+A demo of this project was presented at the buildingSMART International Summit in London 2017.
 
-## Development server
+## Install
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+You need node.js installed on your machine. Get it here: `https://nodejs.org/en/`. Tested with version 6.9.1.
 
-## Code scaffolding
+1) Run `npm install` to install all dependencies. Further requires Angular-CLI and Typescript installed globally on the machine.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2) Copy the two config-files and remove the `_`:  
+  `src/app/services/_config.ts` contains host and URI of triplestore and Forge Backend  
+  `server/config/_forge-api.ts` contains Forge ID and secret  
+  
+## Future
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+A version with a simple triplestore running on the included server will be included ASAP.
