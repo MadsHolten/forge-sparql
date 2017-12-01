@@ -1,6 +1,15 @@
-import { Component, ViewChild, Input, Output, OnInit, OnDestroy, ElementRef, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, 
+         ViewChild, 
+         Input, 
+         Output, 
+         OnInit, 
+         OnDestroy, 
+         ElementRef, 
+         EventEmitter, 
+         OnChanges, 
+         SimpleChanges } from '@angular/core';
 
-import { AutodeskAuthService } from '../../services/autodesk-auth-service';
+import { ForgeAuthService } from '../../services/forge-auth.service';
 import * as _ from 'underscore';
 
 //Tell TS that Autodesk exists as a variable/object somewhere globally
@@ -15,9 +24,9 @@ export interface Token {
 
 @Component({
   selector: 'forge-viewer',
-  templateUrl: './forge-viewer.component.html',
-  styleUrls: ['./forge-viewer.component.scss'],
-  providers: [AutodeskAuthService]
+  templateUrl: './viewer.component.html',
+  styleUrls: ['./viewer.component.css'],
+  providers: [ ForgeAuthService ]
 })
 
 export class ForgeViewerComponent implements OnInit, OnDestroy {
@@ -30,20 +39,38 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
 
   constructor(
     private elementRef: ElementRef,
-    private aas: AutodeskAuthService
+    private fas: ForgeAuthService
   ) { }
 
   @Input() urn: string;
   @Input() filterByURIs: string[];
   @Output() selectedObject = new EventEmitter<Object>();
 
+  // When initializing viewer
   ngOnInit() {
     this.indexViewable = 0; //Initialize to view 0
   }
 
+  // When view is initialized
+  ngAfterViewInit() {
+    this.launchViewer();
+  }
+
+  // When instance is destroyed
+  ngOnDestroy() {
+    if (this.viewer && this.viewer.running) {
+      this.viewer.removeEventListener(Autodesk.Viewing.SELECTION_CHANGED_EVENT, this.selectionChanged);
+      this.viewer.tearDown();
+      this.viewer.finish();
+      this.viewer = null;
+    }
+  }
+
+  // When changes in input data
   ngOnChanges(changes: SimpleChanges){
     if(this.filterByURIs && changes.filterByURIs.currentValue){
       var URIs = changes.filterByURIs.currentValue;
+      console.log(URIs);
       //Generate promises for all searches
       var promises = [];
       for(var i in URIs){
@@ -59,55 +86,7 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
           // //load the extension 
           // this.viewer.loadExtension('Autodesk.ADN.Viewing.Extension.Color');
           // this.viewer.setColorMaterial(ids,0xff0000);
-          
-          
         })
-    }
-  }
-
-  findElementByURI(URI){
-    return new Promise((resolve, reject) => {
-      this.viewer.search('"' + URI + '"', dbIDs => {
-        // Spaces/rooms are handled differently
-        if(!URI.includes('Space') && !URI.includes('Room')) resolve(dbIDs);
-        else {
-          // This is some workaround in order to return only elements. 
-          // It is not the most correct approach and might break in the future
-          var spaceID = _.filter(dbIDs, dbID => {
-            //What properties are present on the node?
-            this.getProperties(dbID).then(propData => {
-              var pd: any = _.clone(propData);
-              // Check if it is a room
-              var findit = pd.properties.filter(item => { 
-                  return (item.displayName === 'Type' 
-                  && item.displayValue === 'Rooms'); 
-              });
-              if(findit.length > 0) resolve(dbID);
-            })
-          })
-        }
-      }, err => {
-        reject(err);
-      })
-    });
-  }
-
-  getProperties(dbid){
-    return new Promise((resolve, reject) => {
-      this.viewer.getProperties(dbid, res => resolve(res), err => reject(err))
-    });
-  }
-
-  ngAfterViewInit() {
-    this.launchViewer();
-  }
-
-  ngOnDestroy() {
-    if (this.viewer && this.viewer.running) {
-      this.viewer.removeEventListener(Autodesk.Viewing.SELECTION_CHANGED_EVENT, this.selectionChanged);
-      this.viewer.tearDown();
-      this.viewer.finish();
-      this.viewer = null;
     }
   }
 
@@ -121,7 +100,7 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
   }
 
   private getAccessToken(onSuccess: any) {
-    var token: Token = this.aas.retrieveToken();
+    var token: Token = this.fas.retrieveToken();
     var accessToken = token.access_token;
     var expireTimeSeconds = token.expires_in;
     return onSuccess(accessToken, expireTimeSeconds);
@@ -129,7 +108,7 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
 
   private launchViewer() {
     if(this.viewer) {
-      //Viewer has already been initialized
+      // Viewer has already been initialized
       return;
     }
 
@@ -137,18 +116,18 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
       env: 'AutodeskProduction',
       getAccessToken: (onSuccess) => { this.getAccessToken(onSuccess) }
     };
-
+    
     // this.viewer = new Autodesk.Viewing.Viewer3D(this.viewerContainer.nativeElement, {}); // Headless viewer
-    //Viewer with UI
+    // Viewer with UI
     this.viewer = new Autodesk.Viewing.Private.GuiViewer3D(this.viewerContainer.nativeElement, {});
-
-    //Check if the viewer has already been initialized
-    //Ugly solution, but works
+    
+    // Check if the viewer has already been initialized
+    // Ugly solution, but works
     if (!Autodesk.Viewing.Private.env) {
-      Autodesk.Viewing.Initializer(options, () => {
-        this.viewer.initialize();
-        this.loadDocument();
-      });
+        Autodesk.Viewing.Initializer(options, () => {
+            this.viewer.initialize();
+            this.loadDocument();
+        });
     } else {
       //give the initialized viewing application a tick to allow DOM element to be established before re-draw
       setTimeout(() => {
@@ -202,6 +181,39 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
       //Emit event
       this.selectedObject.emit(props);
     })
+  }
+
+  private findElementByURI(URI){
+    return new Promise((resolve, reject) => {
+      this.viewer.search('"' + URI + '"', dbIDs => {
+        // Spaces/rooms are handled differently
+        if(!URI.includes('Space') && !URI.includes('Room')) resolve(dbIDs);
+        else {
+          // This is some workaround in order to return only elements. 
+          // It is not the most correct approach and might break in the future
+          var spaceID = _.filter(dbIDs, dbID => {
+            //What properties are present on the node?
+            this.getProperties(dbID).then(propData => {
+              var pd: any = _.clone(propData);
+              // Check if it is a room
+              var findit = pd.properties.filter(item => { 
+                  return (item.displayName === 'Type' 
+                  && item.displayValue === 'Rooms'); 
+              });
+              if(findit.length > 0) resolve(dbID);
+            })
+          })
+        }
+      }, err => {
+        reject(err);
+      })
+    });
+  }
+
+  private getProperties(dbid){
+    return new Promise((resolve, reject) => {
+      this.viewer.getProperties(dbid, res => resolve(res), err => reject(err))
+    });
   }
 
 }

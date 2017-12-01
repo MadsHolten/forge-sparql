@@ -17,13 +17,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors()); //Cross Origin Resource Sharing
 
-var staticRoot = './dist';
-
 //Either get port from environment variable or config file
 app.set('port', (process.env.PORT || config.port));  
 
 //Static files location
-app.use(express.static(staticRoot));
+app.use(express.static('./dist'));
+app.use(express.static('./data'));
 
 /**
  * GET HOMEPAGE

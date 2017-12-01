@@ -1,24 +1,25 @@
 import { Injectable }   from '@angular/core';
-import { Http, Response, RequestOptions, Headers } from '@angular/http';
-import * as ForgeSDK from 'forge-apis';
+import { HttpClient, HttpHeaders }   from '@angular/common/http';
 
-import { Observable }   from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/catch';
 
-import { ServicesConfig } from '../config/backends';
+// Interfaces
+export interface Token {
+    access_token: string;
+    token_type: string;
+    expires_in: number;
+    expires_at: string;
+}
 
 @Injectable()
-export class AutodeskAuthService {
-    private host = ServicesConfig.forgeBackendURL
-    private port = ServicesConfig.forgeBackendPort
-    private baseURL = this.host+':'+this.port;
-    private authURL = this.baseURL+'/api/authenticate';
-    
+export class ForgeAuthService {
+
     private tokenKey:string = 'app_token';
 
     // Inject Http to private field
-    constructor(private http: Http) { }
+    constructor(
+        private http: HttpClient
+    ) { }
 
     private store(content:Object) {
         localStorage.setItem(this.tokenKey, JSON.stringify(content));
@@ -29,17 +30,14 @@ export class AutodeskAuthService {
     }
 
     public generateNewToken() {
-	console.log(this.authURL);
         return this.http
-            .get(this.authURL)
-            .map(res => res.json())
-            .map(token => {
+            .get('/api/authenticate')
+            .map((token: Token) => {
                 let currentTime:number = (new Date()).getTime()/1000;
                 let tokenExpire:number = currentTime+token.expires_in;
                 this.store({tokenExpire: tokenExpire, token});
                 return {tokenExpire: tokenExpire, token};
-            })
-            .catch(this.handleError);
+            });
     }
 
     public retrieveToken() {
@@ -72,21 +70,6 @@ export class AutodeskAuthService {
                     console.log(err);
                 })
         }
-    }
-
-    // Handle errors
-    private handleError (error: Response | any) {
-        // In a real world app, we might use a remote logging infrastructure
-        let errMsg: string;
-        if (error instanceof Response) {
-            const body = error.json() || '';
-            const err = body.error || JSON.stringify(body);
-            errMsg = `${error.status} - ${error.statusText || ''} ${err}`;
-        } else {
-            errMsg = error.message ? error.message : error.toString();
-        }
-            console.error(errMsg);
-            return Observable.throw(errMsg);
     }
 
 }

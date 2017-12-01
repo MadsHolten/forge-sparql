@@ -1,15 +1,15 @@
 var rdfstore = require('rdfstore');
 var Promise = require('bluebird');
 var fs = require('fs');
+var rename = require('rename');
 var _ = require('lodash');
-var rename = require('deep-rename-keys');
 
 //Promisify callback functions
 var readFile = Promise.promisify(fs.readFile);
 var createStore = Promise.promisify(rdfstore.create);
 
 //Variables
-var path = 'dist/assets/triples.ttl'
+var path = 'data/triples.ttl'
 
 var getTriples = readFile(path).then(buffer => buffer.toString());
 
@@ -69,17 +69,17 @@ module.exports = {
         // Correct bindings by flattening the object array,
         // and renaming keys
         var b = _.flatMap(data);
-        bindings = []
-        for (var i in b) {
-            var obj = rename(b[i], (key) => {
-                if (key === 'type') return 'datatype';
-                if (key === 'token') return 'type';
-                if (key === 'lang') return 'xml:lang';
-                return key;
-            });
-            bindings.push(obj);
-        }
-        var res = {head: {vars: vars}, results: {bindings: bindings}};
+        // bindings = []
+        // for (var i in b) {
+        //     var obj = rename(b[i], (key) => {
+        //         if (key === 'type') return 'datatype';
+        //         if (key === 'token') return 'type';
+        //         if (key === 'lang') return 'xml:lang';
+        //         return key;
+        //     });
+        //     bindings.push(obj);
+        // }
+        var res = {head: {vars: vars}, results: {bindings: b}};
         return res;
     }
 }

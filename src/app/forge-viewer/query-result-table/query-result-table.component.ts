@@ -1,6 +1,6 @@
-import {Component, Input, OnChanges, SimpleChanges} from '@angular/core';
-import {DataSource} from '@angular/cdk/collections';
-import {Observable} from 'rxjs/Observable';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { DataSource } from '@angular/cdk/collections';
+import { Observable } from 'rxjs/Observable';
 import * as _ from 'underscore';
 import 'rxjs/add/observable/of';
 
@@ -8,12 +8,12 @@ import 'rxjs/add/observable/of';
  * @title Table with filtering
  */
 @Component({
-  selector: 'result-table',
-  styleUrls: ['result-table.component.scss'],
-  templateUrl: 'result-table.component.html'
+  selector: 'query-result-table',
+  styleUrls: ['query-result-table.component.css'],
+  templateUrl: 'query-result-table.component.html'
 })
 
-export class ResultTableComponent implements OnChanges{
+export class QueryResultTableComponent implements OnChanges{
 
   @Input() queryResult: Object;
   @Input() queryTime: number;

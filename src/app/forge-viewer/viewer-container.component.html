@@ -20,7 +20,6 @@
                     <div class="split-pane-content-primary">
                         <div class="left">
                             <query-field
-                                [projectDB]="projectDB"
                                 (queryResult)="queryResult = $event"
                                 (returnedURIs)="filterByURIs = $event"
                                 (queryTime)="queryTime = $event">
@@ -29,7 +28,7 @@
                     </div>
                     <div class="split-pane-content-secondary">
                         <div class="right">
-                            <result-table [queryResult]="queryResult" [queryTime]="queryTime"></result-table>
+                            <query-result-table [queryResult]="queryResult" [queryTime]="queryTime"></query-result-table>
                         </div>
                     </div>
                 </vertical-split-pane>

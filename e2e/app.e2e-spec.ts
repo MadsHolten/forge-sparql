@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('ng-forge App', () => {
+describe('forge-sparql-ng5 App', () => {
   let page: AppPage;
 
   beforeEach(() => {

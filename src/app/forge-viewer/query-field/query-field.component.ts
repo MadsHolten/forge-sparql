@@ -3,7 +3,7 @@ import * as _ from 'underscore';
 import { Component, Input, EventEmitter, Output } from '@angular/core';
 
 //Services
-import { TriplestoreService } from '../../services/triplestore-service';
+import { TriplestoreService } from '../../services/triplestore.service';
 
 export interface TestQuery {
   title: string;
@@ -13,7 +13,7 @@ export interface TestQuery {
 @Component({
   selector: 'query-field',
   templateUrl: './query-field.component.html',
-  styleUrls: ['./query-field.component.scss'],
+  styleUrls: ['./query-field.component.css'],
   providers: [TriplestoreService]
 })
 
@@ -41,7 +41,6 @@ export class QueryFieldComponent {
     }
   ]
 
-  @Input() projectDB: string;
   @Output() queryResult = new EventEmitter<Object>();
   @Output() returnedURIs = new EventEmitter<string[]>();
   @Output() queryTime = new EventEmitter<number>();
@@ -52,7 +51,7 @@ export class QueryFieldComponent {
 
   performQuery(){
     var start: any = new Date();
-    this.tss.getQuery(this.projectDB, this.query, 'select')
+    this.tss.getQuery(this.query, 'select')
       .subscribe(res => {
         this.queryResult.emit(res);
         
@@ -64,6 +63,7 @@ export class QueryFieldComponent {
         // Extract URIs for filtering
         var URIs = this.extractURIs(res);
         this.returnedURIs.emit(URIs);
+        console.log(URIs)
       }, err => {
         console.log(err);
       });
@@ -79,7 +79,7 @@ export class QueryFieldComponent {
     return _.chain(data.results.bindings)
                     .map(i => {
                       return _.filter(i, j => {
-                        if(j.type == 'uri' && !j.value.startsWith("tag:/")){
+                        if(j.type == 'uri' || j.token == 'uri' && !j.value.startsWith("tag:/")){
                           return true;
                         }
                         return false;

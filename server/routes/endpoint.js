@@ -21,7 +21,6 @@ router.get('/', (req, res, next) => {
         }else if(accept == 'text/turtle'){
             res.send(qRes);
         }
-        
     });
 });
 
