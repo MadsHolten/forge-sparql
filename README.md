@@ -2,6 +2,9 @@
 
 A demo of this project was presented at the buildingSMART International Summit in London 2017.
 
+## Demo
+See a running demo [here](https://forge-sparql.herokuapp.com/)
+
 ## Install
 
 You need node.js installed on your machine. Get it here: `https://nodejs.org/en/`. Tested with version 6.9.1.
