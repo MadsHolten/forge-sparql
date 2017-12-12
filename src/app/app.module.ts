@@ -23,6 +23,9 @@ import { MatButtonModule,
 // Split pane
 import { SplitPaneModule } from 'ng2-split-pane/lib/ng2-split-pane';
 
+// FxFlex
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 // Components
 import { AppComponent } from './app.component';
 import { ViewerContainerComponent } from './forge-viewer/viewer-container.component';
@@ -57,7 +60,8 @@ import { ForgeViewerComponent } from './forge-viewer/viewer/viewer.component';
     MatSlideToggleModule,
     MatCardModule,
     MatProgressSpinnerModule,
-    SplitPaneModule
+    SplitPaneModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
