@@ -18,7 +18,8 @@ import { MatButtonModule,
          MatDialogModule,
          MatSlideToggleModule,
          MatCardModule,
-         MatProgressSpinnerModule } from '@angular/material';
+         MatProgressSpinnerModule,
+         MatTooltipModule } from '@angular/material';
 
 // Split pane
 import { SplitPaneModule } from 'ng2-split-pane/lib/ng2-split-pane';
@@ -60,6 +61,7 @@ import { ForgeViewerComponent } from './forge-viewer/viewer/viewer.component';
     MatSlideToggleModule,
     MatCardModule,
     MatProgressSpinnerModule,
+    MatTooltipModule,
     SplitPaneModule,
     FlexLayoutModule
   ],
