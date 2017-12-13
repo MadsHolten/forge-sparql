@@ -41,7 +41,3 @@ yarn-error.log
 # System Files
 .DS_Store
 Thumbs.db
-
-# Config
-/server/config/forge-api.js
-/src/app/services/config.ts
