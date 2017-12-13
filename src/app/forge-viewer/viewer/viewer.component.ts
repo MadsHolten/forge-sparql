@@ -70,16 +70,18 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
   ngOnChanges(changes: SimpleChanges){
     if(this.filterByURIs && changes.filterByURIs.currentValue){
       var URIs = changes.filterByURIs.currentValue;
-      console.log(URIs);
-      //Generate promises for all searches
+
+      // Generate promises for all URI searches
       var promises = [];
       for(var i in URIs){
         promises.push(this.findElementByURI(URIs[i]));
       }
-      //When all promises return
+
+      // When all promises return
       Promise.all(promises)
         .then(d => {
           var ids = _.chain(d).flatten().uniq().value();
+          console.log(ids);
           this.viewer.isolateById(ids)
 
           /**COLORS NOT WORKING */
@@ -183,11 +185,14 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
     })
   }
 
+  // Find an element by searching for its URI
   private findElementByURI(URI){
     return new Promise((resolve, reject) => {
       this.viewer.search('"' + URI + '"', dbIDs => {
-        // Spaces/rooms are handled differently
-        if(!URI.includes('Space') && !URI.includes('Room')) resolve(dbIDs);
+        // Just return the URI if it is not a room, space or level
+        if(!URI.includes('Space') && !URI.includes('Room') && !URI.includes('Levels')) resolve(dbIDs);
+        
+        // Special case for rooms / spaces / levels
         else {
           // This is some workaround in order to return only elements. 
           // It is not the most correct approach and might break in the future
@@ -196,7 +201,7 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
             this.getProperties(dbID).then(propData => {
               var pd: any = _.clone(propData);
               // Check if it is a room
-              var findit = pd.properties.filter(item => { 
+              var findit = pd.properties.filter(item => {
                   return (item.displayName === 'Type' 
                   && item.displayValue === 'Rooms'); 
               });

@@ -3,16 +3,18 @@ var Promise = require('bluebird');
 var fs = require('fs');
 var rename = require('rename');
 var _ = require('lodash');
+var prefixes = require('../../data/defaultPrefixes.json');
 
 //Promisify callback functions
 var readFile = Promise.promisify(fs.readFile);
 var createStore = Promise.promisify(rdfstore.create);
 
-//Variables
+// Variables
 var path = 'data/triples.ttl'
 
 var getTriples = readFile(path).then(buffer => buffer.toString());
 
+// Function to load triples into an in-memory store
 function loadTriplesInStore(store, triples){
     return new Promise((resolve, reject) => {
         store.load('text/turtle', triples, (err, res) => {
@@ -22,6 +24,7 @@ function loadTriplesInStore(store, triples){
     })
 }
 
+// Function to execute a query
 function executeQuery(store, query, accept){
     start = Date.now();
     return new Promise((resolve, reject) => {
@@ -37,12 +40,18 @@ function executeQuery(store, query, accept){
 }
 
 module.exports = {
+    addPrefixes: function(query){
+        // Append all default prefixes from data/defaultPrefixes.json to the query
+        pfx = '';
+        _.each(prefixes, p => {
+            pfx+= `PREFIX ${p.prefix}:\t<${p.uri}>\n`;
+        })
+        fullQuery = pfx+query;
+        return fullQuery;
+    },
     queryEngine: function(query){
         return getTriples.then(triples => {
             return createStore().then(store => {
-                //attach sources
-
-
                 //load triples in store and return promise
                 return loadTriplesInStore(store, triples).then(d => {        
                     //Define prefix
@@ -58,6 +67,8 @@ module.exports = {
         return getTriples;
     },
     sparqlJSON: function sparqlJSON(data){
+
+        console.log(data);
 
         var map = {
             token : "type",

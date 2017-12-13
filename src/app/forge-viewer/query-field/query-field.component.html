@@ -2,7 +2,11 @@
     <div class="query-container">
         <mat-card-title>Query</mat-card-title>
             <div>
-                <mat-slide-toggle style="padding-top: 25px" disabled="true" [(ngModel)]="reasoning">Reasoning</mat-slide-toggle>
+                <mat-slide-toggle 
+                    style="padding-top: 25px" 
+                    [(ngModel)]="reasoning">
+                        <span [matTooltip]="toolTipReasoning" matTooltipPosition="right">Reasoning</span>
+                </mat-slide-toggle>
                 <span fxFlex="grow"></span>
                 <mat-form-field fxFlex="70%">
                     <mat-select placeholder="Predefined queries" (change)="query = $event.value">
@@ -16,7 +20,7 @@
             <textarea 
                 matInput 
                 placeholder="Query field" 
-                rows="9"
+                rows="7"
                 onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}"
                 [(ngModel)]="query">
             </textarea>
