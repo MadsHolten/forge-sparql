@@ -16,7 +16,7 @@ export class TriplestoreService {
     }
 
     //Get query
-    public getQuery(query, queryType?) {
+    public getQuery(query, queryType?, reasoning?) {
         // Change header if 'select' query requested
         var opts;
         if(queryType == 'select'){
@@ -26,6 +26,11 @@ export class TriplestoreService {
 
         // define search parameters
         this.options.params = {query: query}
+
+        // perform reasoning?
+        if(reasoning){
+            this.options.params.reasoning = true;
+        }
         
         return this.http.get('/endpoint', this.options);
     }

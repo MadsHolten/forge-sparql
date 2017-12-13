@@ -22,6 +22,9 @@ export class QueryFieldComponent {
   query: string = "SELECT ?s\nWHERE {\n\t?s a bot:Space .\n}";
   reasoning: boolean = false;
 
+  // Tooltips
+  toolTipReasoning: string = 'Perform reasoning to infer that for instance if "<S> a bot:Space" then "<S> a bot:Zone" or if "<A> bot:hasSpace <S>" then "<A> bot:containsZone <S>". Reasoning is performed by first saturating the graph based on the BOT ontology and performing this task reduces the performance slightly.';
+
   testQueries: TestQuery[] = [
     { 
       title: 'All elements with adjacency to a specific space',
@@ -51,7 +54,7 @@ export class QueryFieldComponent {
 
   performQuery(){
     var start: any = new Date();
-    this.tss.getQuery(this.query, 'select')
+    this.tss.getQuery(this.query, 'select', this.reasoning)
       .subscribe(res => {
         this.queryResult.emit(res);
         
@@ -63,7 +66,6 @@ export class QueryFieldComponent {
         // Extract URIs for filtering
         var URIs = this.extractURIs(res);
         this.returnedURIs.emit(URIs);
-        console.log(URIs)
       }, err => {
         console.log(err);
       });
