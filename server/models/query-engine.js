@@ -5,14 +5,12 @@ var rename = require('rename');
 var _ = require('lodash');
 var prefixes = require('../../data/defaultPrefixes.json');
 
+// Default path
+var path = 'data/triples.ttl';
+
 //Promisify callback functions
 var readFile = Promise.promisify(fs.readFile);
 var createStore = Promise.promisify(rdfstore.create);
-
-// Variables
-var path = 'data/triples.ttl';
-
-var getTriples = readFile(path).then(buffer => buffer.toString());
 
 // Function to load triples into an in-memory store
 function loadTriplesInStore(store, triples){
@@ -39,6 +37,19 @@ function executeQuery(store, query, accept){
     })
 }
 
+// Function to load multiple triples in store
+function loadMultiple(store,paths){
+    var fileReads = [];
+    for(var i in paths){
+        path = 'data/'+paths[i];
+        var getTriples = readFile(path)
+            .then(buffer => buffer.toString())
+            .then(triples => loadTriplesInStore(store, triples));
+        fileReads.push(getTriples);
+    }
+    return Promise.all(fileReads);
+}
+
 module.exports = {
     addPrefixes: function(query){
         // Append all default prefixes from data/defaultPrefixes.json to the query
@@ -49,18 +60,24 @@ module.exports = {
         fullQuery = pfx+query;
         return fullQuery;
     },
-    queryEngine: function(query){
-        return getTriples.then(triples => {
-            return createStore().then(store => {
-                //load triples in store and return promise
-                return loadTriplesInStore(store, triples).then(d => {        
-                    //Define prefix
-                    store.setPrefix('bot', 'https://w3id.org/bot#');
-                    store.registerDefaultProfileNamespaces();
+    queryEngine: function(query,sources){
+        if(typeof sources === "undefined") {
+            var paths = [path];
+        }else if(typeof sources === "string"){
+            var paths = [sources];
+        }else{
+            var paths = sources;
+        }
+        // When all promises are returned
+        return createStore().then(store => {
+            // load triples in store and return promise
+            return loadMultiple(store,paths).then(d => {        
+                //Define prefix
+                store.setPrefix('bot', 'https://w3id.org/bot#');
+                store.registerDefaultProfileNamespaces();
 
-                    return executeQuery(store, query);
-                });
-            })
+                return executeQuery(store, query);
+            });
         })
     },
     getTriples: function(){

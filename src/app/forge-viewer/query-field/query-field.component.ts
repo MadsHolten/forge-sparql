@@ -55,7 +55,7 @@ export class QueryFieldComponent {
 
   // When changes in input data (urn)
   ngOnChanges(changes: SimpleChanges){
-      if(this.filePaths && changes.filePaths.currentValue){
+      if(this.filePaths && changes.filePaths && changes.filePaths.currentValue){
           this.filePaths = changes.filePaths.currentValue;
           console.log(this.filePaths);
       }

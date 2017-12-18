@@ -69,11 +69,11 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
 
   // When changes in input data
   ngOnChanges(changes: SimpleChanges){
-    if(changes.urn.currentValue){
+    if(this.urn && changes.urn && changes.urn.currentValue){
       this.urn = changes.urn.currentValue;
       this.refreshViewer();
     }
-    if(this.filterByURIs && changes.filterByURIs.currentValue){
+    if(this.filterByURIs && changes.filterByURIs && changes.filterByURIs.currentValue){
       var URIs = changes.filterByURIs.currentValue;
 
       // Generate promises for all URI searches

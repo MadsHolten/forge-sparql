@@ -301,3 +301,53 @@ Mon Dec 18 2017 20:15:25 GMT+0100 (Romance Standard Time) Classification started
 Mon Dec 18 2017 20:15:26 GMT+0100 (Romance Standard Time) Registering derivations to dictionary...
 Mon Dec 18 2017 20:15:26 GMT+0100 (Romance Standard Time) Registered successfully.
 Mon Dec 18 2017 20:15:26 GMT+0100 (Romance Standard Time) Classification succeeded.
+Mon Dec 18 2017 20:39:22 GMT+0100 (Romance Standard Time) Reasoner set as incremental.
+Mon Dec 18 2017 20:39:22 GMT+0100 (Romance Standard Time) 899 triples loaded.
+Mon Dec 18 2017 20:39:22 GMT+0100 (Romance Standard Time) Classification started.
+Mon Dec 18 2017 20:39:22 GMT+0100 (Romance Standard Time) Registering derivations to dictionary...
+Mon Dec 18 2017 20:39:22 GMT+0100 (Romance Standard Time) Registered successfully.
+Mon Dec 18 2017 20:39:22 GMT+0100 (Romance Standard Time) Classification succeeded.
+Mon Dec 18 2017 20:39:30 GMT+0100 (Romance Standard Time) 901 triples loaded.
+Mon Dec 18 2017 20:39:30 GMT+0100 (Romance Standard Time) Classification started.
+Mon Dec 18 2017 20:39:31 GMT+0100 (Romance Standard Time) Registering derivations to dictionary...
+Mon Dec 18 2017 20:39:31 GMT+0100 (Romance Standard Time) Registered successfully.
+Mon Dec 18 2017 20:39:31 GMT+0100 (Romance Standard Time) Classification succeeded.
+Mon Dec 18 2017 20:39:51 GMT+0100 (Romance Standard Time) 901 triples loaded.
+Mon Dec 18 2017 20:39:51 GMT+0100 (Romance Standard Time) Classification started.
+Mon Dec 18 2017 20:39:51 GMT+0100 (Romance Standard Time) Registering derivations to dictionary...
+Mon Dec 18 2017 20:39:51 GMT+0100 (Romance Standard Time) Registered successfully.
+Mon Dec 18 2017 20:39:51 GMT+0100 (Romance Standard Time) Classification succeeded.
+Mon Dec 18 2017 20:40:09 GMT+0100 (Romance Standard Time) 901 triples loaded.
+Mon Dec 18 2017 20:40:09 GMT+0100 (Romance Standard Time) Classification started.
+Mon Dec 18 2017 20:40:09 GMT+0100 (Romance Standard Time) Registering derivations to dictionary...
+Mon Dec 18 2017 20:40:09 GMT+0100 (Romance Standard Time) Registered successfully.
+Mon Dec 18 2017 20:40:09 GMT+0100 (Romance Standard Time) Classification succeeded.
+Mon Dec 18 2017 21:00:41 GMT+0100 (Romance Standard Time) [31mUnhandled rejection TypeError: input.on is not a function
+    at Object.tokenize (C:\Users\MHRA\Development\forge-sparql\node_modules\hylar\node_modules\n3\lib\N3Lexer.js:335:15)
+    at Object.parse (C:\Users\MHRA\Development\forge-sparql\node_modules\hylar\node_modules\n3\lib\N3Parser.js:679:17)
+    at Object.parse (C:\Users\MHRA\Development\forge-sparql\node_modules\hylar\node_modules\rdfstore\src\rvn3_parser.js:25:31)
+    at RDFLoader.tryToParse (C:\Users\MHRA\Development\forge-sparql\node_modules\hylar\node_modules\rdfstore\src\rdf_loader.js:127:16)
+    at Store.load (C:\Users\MHRA\Development\forge-sparql\node_modules\hylar\node_modules\rdfstore\src\store.js:758:39)
+    at Promise (C:\Users\MHRA\Development\forge-sparql\server\models\query-engine.js:15:15)
+    at Promise._execute (C:\Users\MHRA\Development\forge-sparql\node_modules\bluebird\js\release\debuggability.js:303:9)
+    at Promise._resolveFromExecutor (C:\Users\MHRA\Development\forge-sparql\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (C:\Users\MHRA\Development\forge-sparql\node_modules\bluebird\js\release\promise.js:79:10)
+    at loadTriplesInStore (C:\Users\MHRA\Development\forge-sparql\server\models\query-engine.js:14:12)
+    at createStore.then.store (C:\Users\MHRA\Development\forge-sparql\server\models\query-engine.js:67:24)
+    at tryCatcher (C:\Users\MHRA\Development\forge-sparql\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\MHRA\Development\forge-sparql\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\MHRA\Development\forge-sparql\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromiseCtx (C:\Users\MHRA\Development\forge-sparql\node_modules\bluebird\js\release\promise.js:606:10)
+    at Async._drainQueue (C:\Users\MHRA\Development\forge-sparql\node_modules\bluebird\js\release\async.js:138:12)
+    at Async._drainQueues (C:\Users\MHRA\Development\forge-sparql\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\MHRA\Development\forge-sparql\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:637:20)
+    at tryOnImmediate (timers.js:610:5)
+    at processImmediate [as _immediateCallback] (timers.js:582:5)[0m
+
+Mon Dec 18 2017 21:23:46 GMT+0100 (Romance Standard Time) Reasoner set as incremental.
+Mon Dec 18 2017 21:23:46 GMT+0100 (Romance Standard Time) 901 triples loaded.
+Mon Dec 18 2017 21:23:46 GMT+0100 (Romance Standard Time) Classification started.
+Mon Dec 18 2017 21:23:47 GMT+0100 (Romance Standard Time) Registering derivations to dictionary...
+Mon Dec 18 2017 21:23:47 GMT+0100 (Romance Standard Time) Registered successfully.
+Mon Dec 18 2017 21:23:47 GMT+0100 (Romance Standard Time) Classification succeeded.

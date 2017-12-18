@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, ViewChild, ElementRef, OnInit, Input } from '@angular/core';
 
 import * as _ from 'lodash';
 
@@ -37,20 +37,6 @@ export class ViewerContainerComponent implements OnInit {
 
     ngOnInit() {
 
-    }
-
-    // When changes in input data (urn, filePath)
-    ngOnChanges(changes: SimpleChanges){
-        if(typeof changes !== "undefined"){
-            // URN changed?
-            if(this.urn && typeof changes.urn !== "undefined" && changes.urn.currentValue){
-                this.urn = changes.urn.currentValue;
-            }
-            // filePaths changed?
-            if(this.filePaths && typeof changes.filePaths !== "undefined" && changes.filePaths.currentValue){
-                this.filePaths = changes.filePaths.currentValue;
-            }
-        }
     }
 
     onHChange() {
