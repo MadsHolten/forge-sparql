@@ -1,16 +1,9 @@
 import {Component, Inject} from '@angular/core';
 import {MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
+import { NgForm } from '@angular/forms';
 
-export interface Data {
-    title: string;
-    text: string;
-    options: Option;
-}
-
-export interface Option {
-    name: string;
-    value: string;
-}
+// Interfaces
+import { Data } from './choose-model.interface';
 
 @Component({
     selector: 'choose-model-dialog',
@@ -20,10 +13,16 @@ export interface Option {
   export class ChooseModelDialog {
 
     private urn: string;
+    private filePaths: string[];
   
     constructor(
       public dialogRef: MatDialogRef<ChooseModelDialog>,
       @Inject(MAT_DIALOG_DATA) public data: Data) { }
+
+    onChange(ev){
+        // Update filepaths of chosen model
+        this.filePaths = ev.filePaths;
+    }
   
     onNoClick(): void {
       this.dialogRef.close();

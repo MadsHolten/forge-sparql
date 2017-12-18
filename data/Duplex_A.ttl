@@ -1,0 +1,692 @@
+ @prefix bot:      <https://w3id.org/bot#> .
+ @prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+ @prefix rvt:      <https://example.org/rvt#> .
+ @prefix cdt:      <http://w3id.org/lindt/custom_datatypes#> .
+ @prefix nir:  	<https://Niras.dk/XXXX#> .
+
+# ELEMENTS
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021b4e> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021b4e> rdfs:label "Exterior - Brick on Block" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021b4e> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-00021b4e" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021b4e> nir:width" 417 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021b4e> nir:length" 8.383 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021bad> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021bad> rdfs:label "Exterior - Brick on Block" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021bad> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-00021bad" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021bad> nir:width" 417 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021bad> nir:length" 17.383 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021bfd> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021bfd> rdfs:label "Exterior - Brick on Block" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021bfd> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-00021bfd" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021bfd> nir:width" 417 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021bfd> nir:length" 8.383 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021c46> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021c46> rdfs:label "Exterior - Brick on Block" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021c46> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-00021c46" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021c46> nir:width" 417 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021c46> nir:length" 17.383 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021d58> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021d58> rdfs:label "Interior - Partition (92mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021d58> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-00021d58" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021d58> nir:width" 124 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021d58> nir:length" 3.792 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021f87> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021f87> rdfs:label "Interior - Partition (92mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021f87> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-00021f87" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021f87> nir:width" 124 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021f87> nir:length" 3.195 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021fe2> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021fe2> rdfs:label "Party Wall - CMU Residential Unit Dimising Wall" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021fe2> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-00021fe2" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021fe2> nir:width" 550 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021fe2> nir:length" 4.192 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022053> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022053> rdfs:label "Party Wall - CMU Residential Unit Dimising Wall" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022053> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-00022053" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022053> nir:width" 550 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022053> nir:length" 4.192 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002206e> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002206e> rdfs:label "Party Wall - CMU Residential Unit Dimising Wall" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002206e> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-0002206e" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002206e> nir:width" 550 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002206e> nir:length" 2.200 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000221a2> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000221a2> rdfs:label "Interior - Partition (92mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000221a2> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-000221a2" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000221a2> nir:width" 124 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000221a2> nir:length" 3.195 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022207> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022207> rdfs:label "Interior - Partition (92mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022207> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-00022207" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022207> nir:width" 124 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022207> nir:length" 1.594 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000222a3> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000222a3> rdfs:label "Interior - Partition (92mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000222a3> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-000222a3" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000222a3> nir:width" 124 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000222a3> nir:length" 3.792 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000224bf> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000224bf> rdfs:label "Foundation - Concrete (417mm)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000224bf> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-000224bf" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000224bf> nir:width" 417 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000224bf> nir:length" 8.383 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000224e8> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000224e8> rdfs:label "Foundation - Concrete (417mm)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000224e8> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-000224e8" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000224e8> nir:width" 417 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000224e8> nir:length" 17.383 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002250a> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002250a> rdfs:label "Foundation - Concrete (417mm)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002250a> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-0002250a" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002250a> nir:width" 417 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002250a> nir:length" 8.383 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002253a> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002253a> rdfs:label "Foundation - Concrete (417mm)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002253a> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-0002253a" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002253a> nir:width" 417 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002253a> nir:length" 17.383 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022671> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022671> rdfs:label "Foundation - Concrete (435mm)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022671> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-00022671" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022671> nir:width" 435 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022671> nir:length" 4.192 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000226bb> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000226bb> rdfs:label "Foundation - Concrete (435mm)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000226bb> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-000226bb" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000226bb> nir:width" 435 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000226bb> nir:length" 4.192 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000226da> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000226da> rdfs:label "Foundation - Concrete (435mm)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000226da> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-000226da" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000226da> nir:width" 435 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000226da> nir:length" 2.200 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022f87> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022f87> rdfs:label "Party Wall - CMU Residential Unit Dimising Wall" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022f87> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-00022f87" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022f87> nir:width" 550 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022f87> nir:length" 17.383 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023032> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023032> rdfs:label "Exterior - Brick on Block" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023032> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-00023032" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023032> nir:width" 417 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023032> nir:length" 8.383 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023076> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023076> rdfs:label "Exterior - Brick on Block" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023076> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-00023076" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023076> nir:width" 417 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023076> nir:length" 17.383 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230ae> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230ae> rdfs:label "Exterior - Brick on Block" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230ae> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-000230ae" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230ae> nir:width" 417 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230ae> nir:length" 8.383 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230e6> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230e6> rdfs:label "Exterior - Brick on Block" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230e6> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-000230e6" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230e6> nir:width" 417 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230e6> nir:length" 17.383 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000231f0> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000231f0> rdfs:label "Interior - Partition (92mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000231f0> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-000231f0" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000231f0> nir:width" 124 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000231f0> nir:length" 2.236 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023231> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023231> rdfs:label "Interior - Partition (92mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023231> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-00023231" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023231> nir:width" 124 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023231> nir:length" 5.424 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023258> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023258> rdfs:label "Interior - Partition (92mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023258> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-00023258" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023258> nir:width" 124 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023258> nir:length" 2.236 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002330a> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002330a> rdfs:label "Interior - Plumbing (152mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002330a> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-0002330a" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002330a> nir:width" 184 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002330a> nir:length" 1.956 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000233ad> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000233ad> rdfs:label "Interior - Partition (92mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000233ad> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-000233ad" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000233ad> nir:width" 124 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000233ad> nir:length" 1.956 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023486> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023486> rdfs:label "Interior - Partition (92mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023486> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-00023486" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023486> nir:width" 124 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023486> nir:length" 2.236 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000234ca> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000234ca> rdfs:label "Interior - Partition (92mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000234ca> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-000234ca" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000234ca> nir:width" 124 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000234ca> nir:length" 5.424 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000234f9> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000234f9> rdfs:label "Interior - Partition (92mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000234f9> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-000234f9" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000234f9> nir:width" 124 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000234f9> nir:length" 2.236 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002352c> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002352c> rdfs:label "Interior - Partition (92mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002352c> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-0002352c" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002352c> nir:width" 124 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002352c> nir:length" 1.956 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002358f> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002358f> rdfs:label "Interior - Plumbing (152mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002358f> rvt:guid "9808fd7f-dc48-478e-9217-628e833f66bf-0002358f" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002358f> nir:width" 184 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002358f> nir:length" 1.956 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d270> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d270> rdfs:label "Exterior - Brick on Block" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d270> rvt:guid "2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d270" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d270> nir:width" 417 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d270> nir:length" 8.383 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d2b6> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d2b6> rdfs:label "Exterior - Brick on Block" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d2b6> rvt:guid "2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d2b6" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d2b6> nir:width" 417 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d2b6> nir:length" 17.383 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d2e8> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d2e8> rdfs:label "Exterior - Brick on Block" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d2e8> rvt:guid "2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d2e8" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d2e8> nir:width" 417 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d2e8> nir:length" 8.383 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d30d> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d30d> rdfs:label "Exterior - Brick on Block" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d30d> rvt:guid "2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d30d" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d30d> nir:width" 417 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d30d> nir:length" 17.383 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e292> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e292> rdfs:label "Interior - Furring (152 mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e292> rvt:guid "2c391822-07f8-4a22-86a8-a1e574103a53-0002e292" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e292> nir:width" 152 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e292> nir:length" 4.486 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e5cd> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e5cd> rdfs:label "Interior - Furring (152 mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e5cd> rvt:guid "2c391822-07f8-4a22-86a8-a1e574103a53-0002e5cd" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e5cd> nir:width" 152 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e5cd> nir:length" 2.508 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e6bc> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e6bc> rdfs:label "Interior - Partition (92mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e6bc> rvt:guid "2c391822-07f8-4a22-86a8-a1e574103a53-0002e6bc" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e6bc> nir:width" 124 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e6bc> nir:length" 1.594 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e936> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e936> rdfs:label "Interior - Furring (152 mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e936> rvt:guid "2c391822-07f8-4a22-86a8-a1e574103a53-0002e936" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e936> nir:width" 152 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e936> nir:length" 2.508 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e9d5> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e9d5> rdfs:label "Interior - Furring (152 mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e9d5> rvt:guid "2c391822-07f8-4a22-86a8-a1e574103a53-0002e9d5" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e9d5> nir:width" 152 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e9d5> nir:length" 4.486 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/27ece05c-f06c-4dd2-9ccd-945e525b89d5-0002f2df> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/27ece05c-f06c-4dd2-9ccd-945e525b89d5-0002f2df> rdfs:label "Interior - Furring (152 mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/27ece05c-f06c-4dd2-9ccd-945e525b89d5-0002f2df> rvt:guid "27ece05c-f06c-4dd2-9ccd-945e525b89d5-0002f2df" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/27ece05c-f06c-4dd2-9ccd-945e525b89d5-0002f2df> nir:width" 152 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/27ece05c-f06c-4dd2-9ccd-945e525b89d5-0002f2df> nir:length" 4.314 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/27ece05c-f06c-4dd2-9ccd-945e525b89d5-0002f676> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/27ece05c-f06c-4dd2-9ccd-945e525b89d5-0002f676> rdfs:label "Interior - Furring (152 mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/27ece05c-f06c-4dd2-9ccd-945e525b89d5-0002f676> rvt:guid "27ece05c-f06c-4dd2-9ccd-945e525b89d5-0002f676" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/27ece05c-f06c-4dd2-9ccd-945e525b89d5-0002f676> nir:width" 152 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/27ece05c-f06c-4dd2-9ccd-945e525b89d5-0002f676> nir:length" 4.314 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031a53> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031a53> rdfs:label "Interior - Partition (92mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031a53> rvt:guid "64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031a53" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031a53> nir:width" 124 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031a53> nir:length" 1.662 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031cde> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031cde> rdfs:label "Interior - Partition (92mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031cde> rvt:guid "64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031cde" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031cde> nir:width" 124 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031cde> nir:length" 1.662 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031e0c> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031e0c> rdfs:label "Interior - Partition (92mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031e0c> rvt:guid "64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031e0c" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031e0c> nir:width" 124 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031e0c> nir:length" 3.812 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031ecd> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031ecd> rdfs:label "Interior - Partition (92mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031ecd> rvt:guid "64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031ecd" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031ecd> nir:width" 124 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031ecd> nir:length" 3.812 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-00035146> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-00035146> rdfs:label "Interior - Furring (38 mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-00035146> rvt:guid "e21226ef-c42d-4907-9a6f-46644e16769a-00035146" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-00035146> nir:width" 54 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-00035146> nir:length" 1.083 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-00035147> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-00035147> rdfs:label "Interior - Furring (38 mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-00035147> rvt:guid "e21226ef-c42d-4907-9a6f-46644e16769a-00035147" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-00035147> nir:width" 54 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-00035147> nir:length" 1.135 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-00035148> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-00035148> rdfs:label "Interior - Furring (38 mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-00035148> rvt:guid "e21226ef-c42d-4907-9a6f-46644e16769a-00035148" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-00035148> nir:width" 54 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-00035148> nir:length" 1.083 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-00035149> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-00035149> rdfs:label "Interior - Furring (38 mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-00035149> rvt:guid "e21226ef-c42d-4907-9a6f-46644e16769a-00035149" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-00035149> nir:width" 54 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-00035149> nir:length" 1.135 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-000351e9> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-000351e9> rdfs:label "Interior - Furring (38 mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-000351e9> rvt:guid "e21226ef-c42d-4907-9a6f-46644e16769a-000351e9" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-000351e9> nir:width" 54 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-000351e9> nir:length" 1.083 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-000351ea> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-000351ea> rdfs:label "Interior - Furring (38 mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-000351ea> rvt:guid "e21226ef-c42d-4907-9a6f-46644e16769a-000351ea" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-000351ea> nir:width" 54 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-000351ea> nir:length" 1.135 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-000351eb> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-000351eb> rdfs:label "Interior - Furring (38 mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-000351eb> rvt:guid "e21226ef-c42d-4907-9a6f-46644e16769a-000351eb" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-000351eb> nir:width" 54 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-000351eb> nir:length" 1.083 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-000351ec> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-000351ec> rdfs:label "Interior - Furring (38 mm Stud)" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-000351ec> rvt:guid "e21226ef-c42d-4907-9a6f-46644e16769a-000351ec" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-000351ec> nir:width" 54 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/e21226ef-c42d-4907-9a6f-46644e16769a-000351ec> nir:length" 1.135 mm"^^cdt:length .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-0002397c> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-0002397c> rdfs:label "4835mm x 2420mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-0002397c> rvt:guid "6b61ce71-1a7a-473c-8f87-4262e0bf88be-0002397c" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023a60> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023a60> rdfs:label "4835mm x 2420mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023a60> rvt:guid "6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023a60" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023ca4> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023ca4> rdfs:label "1250mm x 2010mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023ca4> rvt:guid "6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023ca4" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023cf6> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023cf6> rdfs:label "1250mm x 2010mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023cf6> rvt:guid "6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023cf6" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023dc5> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023dc5> rdfs:label "750mm x 2200mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023dc5> rvt:guid "6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023dc5" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023e6b> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023e6b> rdfs:label "750mm x 2200mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023e6b> rvt:guid "6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023e6b" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-000240e6> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-000240e6> rdfs:label "2800mm x 2410mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-000240e6> rvt:guid "6b61ce71-1a7a-473c-8f87-4262e0bf88be-000240e6" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-0002421a> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-0002421a> rdfs:label "819mm x 759mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-0002421a> rvt:guid "6b61ce71-1a7a-473c-8f87-4262e0bf88be-0002421a" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-0002447f> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-0002447f> rdfs:label "819mm x 759mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-0002447f> rvt:guid "6b61ce71-1a7a-473c-8f87-4262e0bf88be-0002447f" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-000244f2> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-000244f2> rdfs:label "819mm x 759mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-000244f2> rvt:guid "6b61ce71-1a7a-473c-8f87-4262e0bf88be-000244f2" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-0002471e> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-0002471e> rdfs:label "2800mm x 2410mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-0002471e> rvt:guid "6b61ce71-1a7a-473c-8f87-4262e0bf88be-0002471e" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024821> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024821> rdfs:label "819mm x 759mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024821> rvt:guid "6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024821" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-000248e8> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-000248e8> rdfs:label "819mm x 759mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-000248e8> rvt:guid "6b61ce71-1a7a-473c-8f87-4262e0bf88be-000248e8" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-000249a4> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-000249a4> rdfs:label "819mm x 759mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-000249a4> rvt:guid "6b61ce71-1a7a-473c-8f87-4262e0bf88be-000249a4" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024a9d> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024a9d> rdfs:label "0762 x 2032mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024a9d> rvt:guid "6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024a9d" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024af1> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024af1> rdfs:label "0762 x 2032mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024af1> rvt:guid "6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024af1" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024b6a> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024b6a> rdfs:label "0864 x 2032mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024b6a> rvt:guid "6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024b6a" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024bce> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024bce> rdfs:label "0864 x 2032mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024bce> rvt:guid "6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024bce" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/982f59b0-f2e1-485f-8ce1-c9f61179e785-00026ff6> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/982f59b0-f2e1-485f-8ce1-c9f61179e785-00026ff6> rdfs:label "0864 x 2032mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/982f59b0-f2e1-485f-8ce1-c9f61179e785-00026ff6> rvt:guid "982f59b0-f2e1-485f-8ce1-c9f61179e785-00026ff6" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/982f59b0-f2e1-485f-8ce1-c9f61179e785-0002705a> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/982f59b0-f2e1-485f-8ce1-c9f61179e785-0002705a> rdfs:label "0864 x 2032mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/982f59b0-f2e1-485f-8ce1-c9f61179e785-0002705a> rvt:guid "982f59b0-f2e1-485f-8ce1-c9f61179e785-0002705a" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/982f59b0-f2e1-485f-8ce1-c9f61179e785-00027141> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/982f59b0-f2e1-485f-8ce1-c9f61179e785-00027141> rdfs:label "0864 x 2032mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/982f59b0-f2e1-485f-8ce1-c9f61179e785-00027141> rvt:guid "982f59b0-f2e1-485f-8ce1-c9f61179e785-00027141" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/982f59b0-f2e1-485f-8ce1-c9f61179e785-000271d0> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/982f59b0-f2e1-485f-8ce1-c9f61179e785-000271d0> rdfs:label "0864 x 2032mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/982f59b0-f2e1-485f-8ce1-c9f61179e785-000271d0> rvt:guid "982f59b0-f2e1-485f-8ce1-c9f61179e785-000271d0" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/7606d7eb-508f-40ce-a522-9b526ddeed4c-00029f4d> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/7606d7eb-508f-40ce-a522-9b526ddeed4c-00029f4d> rdfs:label "0813 x 2420mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/7606d7eb-508f-40ce-a522-9b526ddeed4c-00029f4d> rvt:guid "7606d7eb-508f-40ce-a522-9b526ddeed4c-00029f4d" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/7606d7eb-508f-40ce-a522-9b526ddeed4c-00029fc7> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/7606d7eb-508f-40ce-a522-9b526ddeed4c-00029fc7> rdfs:label "0813 x 2420mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/7606d7eb-508f-40ce-a522-9b526ddeed4c-00029fc7> rvt:guid "7606d7eb-508f-40ce-a522-9b526ddeed4c-00029fc7" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c05e> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c05e> rdfs:label "2800mm x 2410mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c05e> rvt:guid "6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c05e" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c1b7> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c1b7> rdfs:label "819mm x 759mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c1b7> rvt:guid "6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c1b7" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c280> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c280> rdfs:label "819mm x 759mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c280> rvt:guid "6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c280" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c302> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c302> rdfs:label "819mm x 759mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c302> rvt:guid "6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c302" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c368> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c368> rdfs:label "2800mm x 2410mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c368> rvt:guid "6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c368" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c425> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c425> rdfs:label "819mm x 759mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c425> rvt:guid "6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c425" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c52c> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c52c> rdfs:label "819mm x 759mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c52c> rvt:guid "6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c52c" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c54f> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c54f> rdfs:label "819mm x 759mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c54f> rvt:guid "6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c54f" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c6aa> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c6aa> rdfs:label "750mm x 2200mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c6aa> rvt:guid "6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c6aa" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c755> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c755> rdfs:label "750mm x 2200mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c755> rvt:guid "6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c755" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/4ec82fcb-9118-4408-a3ae-37969a35fa74-0002d3f9> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/4ec82fcb-9118-4408-a3ae-37969a35fa74-0002d3f9> rdfs:label "1180 x 1170mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/4ec82fcb-9118-4408-a3ae-37969a35fa74-0002d3f9> rvt:guid "4ec82fcb-9118-4408-a3ae-37969a35fa74-0002d3f9" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/4ec82fcb-9118-4408-a3ae-37969a35fa74-0002d576> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/4ec82fcb-9118-4408-a3ae-37969a35fa74-0002d576> rdfs:label "1180 x 1170mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Windows/4ec82fcb-9118-4408-a3ae-37969a35fa74-0002d576> rvt:guid "4ec82fcb-9118-4408-a3ae-37969a35fa74-0002d576" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031bc8> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031bc8> rdfs:label "0762 x 2032mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031bc8> rvt:guid "64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031bc8" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031d02> a bot:Element .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031d02> rdfs:label "0762 x 2032mm" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Doors/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031d02> rvt:guid "64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031d02" .
+
+# STOREYS
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/e3e052f9-0156-11d5-9301-0000863f27ad-00000137> a bot:Storey .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/e3e052f9-0156-11d5-9301-0000863f27ad-00000137> rdfs:label "Level 1" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/e3e052f9-0156-11d5-9301-0000863f27ad-00000137> rvt:guid "e3e052f9-0156-11d5-9301-0000863f27ad-00000137" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/458c0e49-01bb-11d5-9302-0000863f27ad-000002b6> a bot:Storey .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/458c0e49-01bb-11d5-9302-0000863f27ad-000002b6> rdfs:label "Level 2" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/458c0e49-01bb-11d5-9302-0000863f27ad-000002b6> rvt:guid "458c0e49-01bb-11d5-9302-0000863f27ad-000002b6" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/052baddb-ec77-457a-8fe9-c10a6a5858da-00020e96> a bot:Storey .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/052baddb-ec77-457a-8fe9-c10a6a5858da-00020e96> rdfs:label "T/FDN" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/052baddb-ec77-457a-8fe9-c10a6a5858da-00020e96> rvt:guid "052baddb-ec77-457a-8fe9-c10a6a5858da-00020e96" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/25950afa-f028-4e7a-9994-e1ed964bb928-0002132b> a bot:Storey .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/25950afa-f028-4e7a-9994-e1ed964bb928-0002132b> rdfs:label "Roof" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/25950afa-f028-4e7a-9994-e1ed964bb928-0002132b> rvt:guid "25950afa-f028-4e7a-9994-e1ed964bb928-0002132b" .
+
+# SPACES
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ff9f> a bot:Space .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ff9f> rdfs:label "Living Room A102" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ff9f> rvt:guid "0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ff9f" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ff9f> nir:space_area" 30141645,2499999 mm2 "^^cdt:ucum .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ff9f> nir:space_volumen" 71390689708,9998 cm3"^^cdt:volumemm3  .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa2> a bot:Space .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa2> rdfs:label "Kitchen A103" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa2> rvt:guid "0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa2" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa2> nir:space_area" 13897500,9999999 mm2 "^^cdt:ucum .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa2> nir:space_volumen" 33512179089,9997 cm3"^^cdt:volumemm3  .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa5> a bot:Space .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa5> rdfs:label "Bathroom 1 A104" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa5> rvt:guid "0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa5" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa5> nir:space_area" 3997752,00000005 mm2 "^^cdt:ucum .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa5> nir:space_volumen" 8177444912,00012 cm3"^^cdt:volumemm3  .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa8> a bot:Space .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa8> rdfs:label "Foyer A101" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa8> rvt:guid "0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa8" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa8> nir:space_area" 17936236,7499998 mm2 "^^cdt:ucum .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa8> nir:space_volumen" 40241253701,9994 cm3"^^cdt:volumemm3  .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb1> a bot:Space .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb1> rdfs:label "Hallway A201" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb1> rvt:guid "0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb1" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb1> nir:space_area" 7799954,69999988 mm2 "^^cdt:ucum .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb1> nir:space_volumen" 18115464263,001 cm3"^^cdt:volumemm3  .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb5> a bot:Space .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb5> rdfs:label "Bathroom 2 A204" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb5> rvt:guid "0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb5" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb5> nir:space_area" 5415819,4013112 mm2 "^^cdt:ucum .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb5> nir:space_volumen" 12240220859,4189 cm3"^^cdt:volumemm3  .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb8> a bot:Space .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb8> rdfs:label "Bedroom 2 A203" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb8> rvt:guid "0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb8" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb8> nir:space_area" 26177994,25 mm2 "^^cdt:ucum .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb8> nir:space_volumen" 56893581792,0039 cm3"^^cdt:volumemm3  .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffbb> a bot:Space .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffbb> rdfs:label "Bedroom 1 A202" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffbb> rvt:guid "0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffbb" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffbb> nir:space_area" 26119314,25 mm2 "^^cdt:ucum .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffbb> nir:space_volumen" 56893581792,0039 cm3"^^cdt:volumemm3  .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-000301fe> a bot:Space .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-000301fe> rdfs:label "Living Room B102" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-000301fe> rvt:guid "0b74b3fa-1a92-405e-9ac9-d59067bce2dd-000301fe" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-000301fe> nir:space_area" 30141645,25 mm2 "^^cdt:ucum .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-000301fe> nir:space_volumen" 71390689708,9999 cm3"^^cdt:volumemm3  .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030201> a bot:Space .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030201> rdfs:label "Kitchen B103" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030201> rvt:guid "0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030201" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030201> nir:space_area" 13897500,9999998 mm2 "^^cdt:ucum .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030201> nir:space_volumen" 33512179089,9995 cm3"^^cdt:volumemm3  .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030204> a bot:Space .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030204> rdfs:label "Bathroom 1 B104" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030204> rvt:guid "0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030204" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030204> nir:space_area" 3997752,00000007 mm2 "^^cdt:ucum .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030204> nir:space_volumen" 8177444912,00017 cm3"^^cdt:volumemm3  .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030207> a bot:Space .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030207> rdfs:label "Foyer B101" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030207> rvt:guid "0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030207" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030207> nir:space_area" 17936236,7499999 mm2 "^^cdt:ucum .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030207> nir:space_volumen" 40241253701,9999 cm3"^^cdt:volumemm3  .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0003020d> a bot:Space .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0003020d> rdfs:label "Hallway B201" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0003020d> rvt:guid "0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0003020d" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0003020d> nir:space_area" 7799954,69999998 mm2 "^^cdt:ucum .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0003020d> nir:space_volumen" 18115464263,0012 cm3"^^cdt:volumemm3  .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030211> a bot:Space .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030211> rdfs:label "Bathroom 2 B204" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030211> rvt:guid "0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030211" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030211> nir:space_area" 5441473,05868456 mm2 "^^cdt:ucum .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030211> nir:space_volumen" 12301076335,7825 cm3"^^cdt:volumemm3  .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030214> a bot:Space .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030214> rdfs:label "Bedroom 2 B203" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030214> rvt:guid "0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030214" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030214> nir:space_area" 26177994,25 mm2 "^^cdt:ucum .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030214> nir:space_volumen" 56893581792,0039 cm3"^^cdt:volumemm3  .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030217> a bot:Space .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030217> rdfs:label "Bedroom 1 B202" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030217> rvt:guid "0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030217" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030217> nir:space_area" 26119314,2499998 mm2 "^^cdt:ucum .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030217> nir:space_volumen" 56893581792,0035 cm3"^^cdt:volumemm3  .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/aa6e13ea-b5bc-4245-93bf-8b2355872cb5-00031f6a> a bot:Space .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/aa6e13ea-b5bc-4245-93bf-8b2355872cb5-00031f6a> rdfs:label "Utility A205" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/aa6e13ea-b5bc-4245-93bf-8b2355872cb5-00031f6a> rvt:guid "aa6e13ea-b5bc-4245-93bf-8b2355872cb5-00031f6a" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/aa6e13ea-b5bc-4245-93bf-8b2355872cb5-00031f6a> nir:space_area" 1754048,59868888 mm2 "^^cdt:ucum .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/aa6e13ea-b5bc-4245-93bf-8b2355872cb5-00031f6a> nir:space_volumen" 3672064308,58246 cm3"^^cdt:volumemm3  .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/aa6e13ea-b5bc-4245-93bf-8b2355872cb5-00031f79> a bot:Space .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/aa6e13ea-b5bc-4245-93bf-8b2355872cb5-00031f79> rdfs:label "Utility B205" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/aa6e13ea-b5bc-4245-93bf-8b2355872cb5-00031f79> rvt:guid "aa6e13ea-b5bc-4245-93bf-8b2355872cb5-00031f79" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/aa6e13ea-b5bc-4245-93bf-8b2355872cb5-00031f79> nir:space_area" 1728394,94131539 mm2 "^^cdt:ucum .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/aa6e13ea-b5bc-4245-93bf-8b2355872cb5-00031f79> nir:space_volumen" 3611208832,21851 cm3"^^cdt:volumemm3  .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/40c2d70d-8d3b-49a9-9702-6756a4ed76b3-0003364e> a bot:Space .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/40c2d70d-8d3b-49a9-9702-6756a4ed76b3-0003364e> rdfs:label "Stair A105" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/40c2d70d-8d3b-49a9-9702-6756a4ed76b3-0003364e> rvt:guid "40c2d70d-8d3b-49a9-9702-6756a4ed76b3-0003364e" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/40c2d70d-8d3b-49a9-9702-6756a4ed76b3-0003364e> nir:space_area" 4922172,50000002 mm2 "^^cdt:ucum .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/40c2d70d-8d3b-49a9-9702-6756a4ed76b3-0003364e> nir:space_volumen" 20796062240,0008 cm3"^^cdt:volumemm3  .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/40c2d70d-8d3b-49a9-9702-6756a4ed76b3-00033781> a bot:Space .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/40c2d70d-8d3b-49a9-9702-6756a4ed76b3-00033781> rdfs:label "Room B105" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/40c2d70d-8d3b-49a9-9702-6756a4ed76b3-00033781> rvt:guid "40c2d70d-8d3b-49a9-9702-6756a4ed76b3-00033781" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/40c2d70d-8d3b-49a9-9702-6756a4ed76b3-00033781> nir:space_area" 4922172,50000005 mm2 "^^cdt:ucum .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/40c2d70d-8d3b-49a9-9702-6756a4ed76b3-00033781> nir:space_volumen" 20796062240,0008 cm3"^^cdt:volumemm3  .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/335fc1b3-63ca-474d-9c21-6d5abbdb0485-00033925> a bot:Space .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/335fc1b3-63ca-474d-9c21-6d5abbdb0485-00033925> rdfs:label "Roof R301" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/335fc1b3-63ca-474d-9c21-6d5abbdb0485-00033925> rvt:guid "335fc1b3-63ca-474d-9c21-6d5abbdb0485-00033925" .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/335fc1b3-63ca-474d-9c21-6d5abbdb0485-00033925> nir:space_area" 145721689 mm2 "^^cdt:ucum .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/335fc1b3-63ca-474d-9c21-6d5abbdb0485-00033925> nir:space_volumen" 405453467999,999 cm3"^^cdt:volumemm3  .
+
+# Windows Hosted in wall
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021b4e> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-0002397c> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021bfd> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023a60> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021bad> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023ca4> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021c46> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023cf6> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021bad> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023dc5> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021c46> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00023e6b> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023032> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-000240e6> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023032> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-0002421a> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023032> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-0002447f> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023032> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-000244f2> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230ae> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-0002471e> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230ae> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024821> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230ae> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-000248e8> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230ae> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Windows/6b61ce71-1a7a-473c-8f87-4262e0bf88be-000249a4> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000221a2> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024a9d> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021f87> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024af1> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000231f0> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024b6a> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023486> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Doors/6b61ce71-1a7a-473c-8f87-4262e0bf88be-00024bce> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023258> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Doors/982f59b0-f2e1-485f-8ce1-c9f61179e785-00026ff6> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000234f9> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Doors/982f59b0-f2e1-485f-8ce1-c9f61179e785-0002705a> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023231> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Doors/982f59b0-f2e1-485f-8ce1-c9f61179e785-00027141> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000234ca> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Doors/982f59b0-f2e1-485f-8ce1-c9f61179e785-000271d0> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021b4e> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Doors/7606d7eb-508f-40ce-a522-9b526ddeed4c-00029f4d> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021bfd> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Doors/7606d7eb-508f-40ce-a522-9b526ddeed4c-00029fc7> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230e6> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c05e> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230e6> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c1b7> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230e6> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c280> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230e6> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c302> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023076> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c368> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023076> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c425> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023076> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c52c> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023076> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c54f> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023076> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c6aa> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230e6> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Windows/6f010293-ddb7-4fe4-8ffd-c144d8468fb6-0002c755> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031a53> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Doors/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031bc8> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031cde> bot:hostsElement <https://forge-sparql.herokuapp.com/projects/P000001/Doors/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031d02> .
+
+# ROOMS AT EACH STOREY
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/e3e052f9-0156-11d5-9301-0000863f27ad-00000137> bot:hasSpace <https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ff9f> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/e3e052f9-0156-11d5-9301-0000863f27ad-00000137> bot:hasSpace <https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa2> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/e3e052f9-0156-11d5-9301-0000863f27ad-00000137> bot:hasSpace <https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa5> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/e3e052f9-0156-11d5-9301-0000863f27ad-00000137> bot:hasSpace <https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa8> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/458c0e49-01bb-11d5-9302-0000863f27ad-000002b6> bot:hasSpace <https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb1> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/458c0e49-01bb-11d5-9302-0000863f27ad-000002b6> bot:hasSpace <https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb5> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/458c0e49-01bb-11d5-9302-0000863f27ad-000002b6> bot:hasSpace <https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb8> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/458c0e49-01bb-11d5-9302-0000863f27ad-000002b6> bot:hasSpace <https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffbb> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/e3e052f9-0156-11d5-9301-0000863f27ad-00000137> bot:hasSpace <https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-000301fe> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/e3e052f9-0156-11d5-9301-0000863f27ad-00000137> bot:hasSpace <https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030201> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/e3e052f9-0156-11d5-9301-0000863f27ad-00000137> bot:hasSpace <https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030204> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/e3e052f9-0156-11d5-9301-0000863f27ad-00000137> bot:hasSpace <https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030207> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/458c0e49-01bb-11d5-9302-0000863f27ad-000002b6> bot:hasSpace <https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0003020d> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/458c0e49-01bb-11d5-9302-0000863f27ad-000002b6> bot:hasSpace <https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030211> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/458c0e49-01bb-11d5-9302-0000863f27ad-000002b6> bot:hasSpace <https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030214> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/458c0e49-01bb-11d5-9302-0000863f27ad-000002b6> bot:hasSpace <https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030217> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/458c0e49-01bb-11d5-9302-0000863f27ad-000002b6> bot:hasSpace <https://forge-sparql.herokuapp.com/projects/P000001/Rooms/aa6e13ea-b5bc-4245-93bf-8b2355872cb5-00031f6a> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/458c0e49-01bb-11d5-9302-0000863f27ad-000002b6> bot:hasSpace <https://forge-sparql.herokuapp.com/projects/P000001/Rooms/aa6e13ea-b5bc-4245-93bf-8b2355872cb5-00031f79> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/e3e052f9-0156-11d5-9301-0000863f27ad-00000137> bot:hasSpace <https://forge-sparql.herokuapp.com/projects/P000001/Rooms/40c2d70d-8d3b-49a9-9702-6756a4ed76b3-0003364e> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/e3e052f9-0156-11d5-9301-0000863f27ad-00000137> bot:hasSpace <https://forge-sparql.herokuapp.com/projects/P000001/Rooms/40c2d70d-8d3b-49a9-9702-6756a4ed76b3-00033781> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Levels/25950afa-f028-4e7a-9994-e1ed964bb928-0002132b> bot:hasSpace <https://forge-sparql.herokuapp.com/projects/P000001/Rooms/335fc1b3-63ca-474d-9c21-6d5abbdb0485-00033925> .
+
+# ELEMENTS ADJACENT TO ROOMS
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ff9f> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021bfd> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ff9f> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000222a3> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ff9f> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021c46> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa2> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021c46> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa2> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000221a2> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa2> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022207> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa2> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e9d5> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa5> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021fe2> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa5> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e936> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa5> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022207> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa5> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000221a2> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa8> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021bad> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa8> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021fe2> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa8> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000221a2> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa8> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000221a2> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa8> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000222a3> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffa8> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021bfd> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb1> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023076> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb1> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000234f9> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb1> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000234ca> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb1> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000234ca> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb1> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000234ca> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb1> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000234ca> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb1> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023486> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb5> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000234ca> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb5> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031cde> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb5> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/27ece05c-f06c-4dd2-9ccd-945e525b89d5-0002f2df> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb5> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002358f> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb8> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022f87> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb8> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230ae> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb8> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023076> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb8> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023486> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb8> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023486> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb8> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000234ca> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb8> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002358f> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffb8> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002358f> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffbb> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022f87> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffbb> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002352c> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffbb> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002352c> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffbb> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000234ca> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffbb> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000234f9> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffbb> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023076> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0002ffbb> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023032> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-000301fe> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021b4e> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-000301fe> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021d58> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-000301fe> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021bad> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030201> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021bad> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030201> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021f87> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030201> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e6bc> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030201> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e292> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030204> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021f87> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030204> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022053> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030204> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e5cd> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030204> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/2c391822-07f8-4a22-86a8-a1e574103a53-0002e6bc> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030207> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021b4e> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030207> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021c46> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030207> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022053> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030207> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021f87> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030207> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021f87> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030207> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021d58> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0003020d> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230e6> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0003020d> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023258> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0003020d> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023231> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0003020d> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023231> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0003020d> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023231> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0003020d> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023231> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-0003020d> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000231f0> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030211> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023231> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030211> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031a53> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030211> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/27ece05c-f06c-4dd2-9ccd-945e525b89d5-0002f676> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030211> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002330a> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030214> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022f87> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030214> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023032> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030214> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230e6> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030214> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000231f0> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030214> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000231f0> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030214> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023231> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030214> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002330a> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030214> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002330a> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030217> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022f87> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030217> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000233ad> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030217> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000233ad> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030217> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023231> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030217> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023258> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030217> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230e6> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/0b74b3fa-1a92-405e-9ac9-d59067bce2dd-00030217> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000230ae> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/aa6e13ea-b5bc-4245-93bf-8b2355872cb5-00031f6a> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000234ca> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/aa6e13ea-b5bc-4245-93bf-8b2355872cb5-00031f6a> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-0002352c> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/aa6e13ea-b5bc-4245-93bf-8b2355872cb5-00031f6a> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/27ece05c-f06c-4dd2-9ccd-945e525b89d5-0002f2df> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/aa6e13ea-b5bc-4245-93bf-8b2355872cb5-00031f6a> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031cde> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/aa6e13ea-b5bc-4245-93bf-8b2355872cb5-00031f79> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00023231> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/aa6e13ea-b5bc-4245-93bf-8b2355872cb5-00031f79> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-000233ad> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/aa6e13ea-b5bc-4245-93bf-8b2355872cb5-00031f79> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/27ece05c-f06c-4dd2-9ccd-945e525b89d5-0002f676> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/aa6e13ea-b5bc-4245-93bf-8b2355872cb5-00031f79> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/64b7f7d3-8cfc-4277-ba33-8de2e6502424-00031a53> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/40c2d70d-8d3b-49a9-9702-6756a4ed76b3-0003364e> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021bad> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/40c2d70d-8d3b-49a9-9702-6756a4ed76b3-0003364e> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021fe2> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/40c2d70d-8d3b-49a9-9702-6756a4ed76b3-00033781> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00021c46> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/40c2d70d-8d3b-49a9-9702-6756a4ed76b3-00033781> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/9808fd7f-dc48-478e-9217-628e833f66bf-00022053> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/335fc1b3-63ca-474d-9c21-6d5abbdb0485-00033925> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d270> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/335fc1b3-63ca-474d-9c21-6d5abbdb0485-00033925> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d30d> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/335fc1b3-63ca-474d-9c21-6d5abbdb0485-00033925> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d2e8> .
+<https://forge-sparql.herokuapp.com/projects/P000001/Rooms/335fc1b3-63ca-474d-9c21-6d5abbdb0485-00033925> bot:adjacentElement <https://forge-sparql.herokuapp.com/projects/P000001/Walls/2da40d62-4698-436c-a2c3-95c49bb5de4c-0002d2b6> .

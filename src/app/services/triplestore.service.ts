@@ -16,7 +16,7 @@ export class TriplestoreService {
     }
 
     //Get query
-    public getQuery(query, queryType?, reasoning?) {
+    public getQuery(query, queryType?, reasoning?, filePaths?) {
         // Change header if 'select' query requested
         var opts;
         if(queryType == 'select'){
@@ -30,6 +30,12 @@ export class TriplestoreService {
         // perform reasoning?
         if(reasoning){
             this.options.params.reasoning = true;
+        }
+
+        // Source(s) specified?
+        if(filePaths){
+            // Convert to comma separated string and send as query parameter
+            this.options.params.sources = filePaths.join();
         }
         
         return this.http.get('/endpoint', this.options);

@@ -10,7 +10,7 @@ var readFile = Promise.promisify(fs.readFile);
 var createStore = Promise.promisify(rdfstore.create);
 
 // Variables
-var path = 'data/triples.ttl'
+var path = 'data/triples.ttl';
 
 var getTriples = readFile(path).then(buffer => buffer.toString());
 

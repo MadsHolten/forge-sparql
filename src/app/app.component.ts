@@ -3,6 +3,9 @@ import { MatDialog } from '@angular/material';
 
 import { ChooseModelDialog } from './dialogs/choose-model.component'
 
+// Interfaces
+import { Option } from './dialogs/choose-model.interface';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,11 +13,20 @@ import { ChooseModelDialog } from './dialogs/choose-model.component'
 })
 export class AppComponent {
 
-  public models = [
-      {"name": "testprojekt", "value": "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bmlyYXNfcDEwMTEwMS90ZXN0cHJvamVrdF9VUklzLm53Yw"},
-      {"name": "Duplex", "value": "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bW9kZWwyMDE3LTEyLTE4LTEyLTM2LTQxLWQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0MjdlL0R1cGxleF9BLnJ2dA"}
+  public models: Option[] = [
+      {
+        "name": "Test_project", 
+        "urn": "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bmlyYXNfcDEwMTEwMS90ZXN0cHJvamVrdF9VUklzLm53Yw",
+        "filePaths": ["testmodel.ttl", "bot.ttl"]
+      },
+      {
+        "name": "Duplex", 
+        "urn": "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bW9kZWwyMDE3LTEyLTE4LTEyLTM2LTQxLWQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0MjdlL0R1cGxleF9BLnJ2dA",
+        "filePaths": ["Duplex_A.ttl", "bot.ttl"]
+      }
   ];
-  public urn = this.models[0].value;
+  public urn = this.models[0].urn;
+  public filePaths = this.models[0].filePaths;
 
   constructor(public dialog: MatDialog) {}
 
@@ -28,8 +40,8 @@ export class AppComponent {
       }
     });
     dialogRef.afterClosed().subscribe(result => {
-      console.log("result: "+result)
-      this.urn = result;
+      this.urn = result.urn;
+      this.filePaths = result.filePaths;
     });
   }
 

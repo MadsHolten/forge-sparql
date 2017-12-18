@@ -1,16 +1,21 @@
 <h2 mat-dialog-title>{{data.title}}</h2>
 <hr>
 <mat-dialog-content>
-    {{data.text}}
-    <br>
-    <br>
-    <mat-form-field>
-        <mat-select placeholder="Model" #selectedModel>
-            <mat-option *ngFor="let item of data.options" [value]="item.value">
+    <h4>{{data.text}}</h4>
+    <mat-form-field class="full-width">
+        <mat-select placeholder="Model" #selectedModel (change)="onChange(selectedModel.value)">
+            <mat-option *ngFor="let item of data.options" [value]="item">
                 {{ item.name }}
             </mat-option>
         </mat-select>
     </mat-form-field>
+    <br>
+    <h4>File path(s)</h4>
+    <div *ngFor="let item of filePaths">
+        <mat-form-field class="full-width">
+            <input matInput placeholder="Path" disabled="true" [value]="item">
+        </mat-form-field>
+    </div>
 </mat-dialog-content>
 <hr>
 <mat-dialog-actions>

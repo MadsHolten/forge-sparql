@@ -3,13 +3,21 @@ var fs = require('fs');
 h = new Hylar();
 
 module.exports = {
-    queryEngine: function(query){
-
+    queryEngine: function(query,sources){
         //Files and settings
         var mimeType = 'text/turtle';
         var files = [];
-        files.push('data/triples.ttl');
-        files.push('data/bot.ttl');
+        if(typeof sources !== "undefined") {
+            for(var i in sources){
+                path = 'data/'+sources[i];
+                files.push(path);
+            }
+        }else{
+            // Default
+            files.push('data/triples.ttl');
+            files.push('data/bot.ttl');
+        }
+        
 
         //Get file content
         var triples = '';

@@ -19,6 +19,7 @@ import { TriplestoreService } from '../services/triplestore.service';
 export class ViewerContainerComponent implements OnInit {
 
     @Input() urn: string;
+    @Input() filePaths: string[];
     @ViewChild('mainContentPane') mainContentPaneEl: ElementRef;
 
     // Parameters returned from query field
@@ -35,26 +36,22 @@ export class ViewerContainerComponent implements OnInit {
       ) { }
 
     ngOnInit() {
-        //NB! should be retrieved through router module in a full implementation
-        // this.bucketKey = 'niras_p101101';
-        // this.objectKey = 'testprojekt_URIs.nwc';
-        // this.getModelDetails();
-        // console.log("urn: "+this.urn)
+
     }
 
-    // When changes in input data (urn)
+    // When changes in input data (urn, filePath)
     ngOnChanges(changes: SimpleChanges){
-        if(this.urn && changes.urn.currentValue){
-            this.urn = changes.urn.currentValue;
+        if(typeof changes !== "undefined"){
+            // URN changed?
+            if(this.urn && typeof changes.urn !== "undefined" && changes.urn.currentValue){
+                this.urn = changes.urn.currentValue;
+            }
+            // filePaths changed?
+            if(this.filePaths && typeof changes.filePaths !== "undefined" && changes.filePaths.currentValue){
+                this.filePaths = changes.filePaths.currentValue;
+            }
         }
     }
-
-    // private getModelDetails() {
-    //     // this.getObectGUID();
-    //     var objectId: string = 'urn:adsk.objects:os.object:'+encodeURI(this.bucketKey)+'/'+encodeURI(this.objectKey);
-    //     this.urn = btoa(objectId).split('=')[0];
-    //     console.log(this.urn)
-    // }
 
     onHChange() {
         //emitted after horizontal view change
@@ -68,7 +65,7 @@ export class ViewerContainerComponent implements OnInit {
     }
 
     log(ev){
-        console.log(ev);
+        
     }
 
 }
