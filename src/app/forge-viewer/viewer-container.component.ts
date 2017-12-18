@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
+import { Component, ViewChild, ElementRef, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
 
 import * as _ from 'lodash';
 
@@ -8,6 +8,8 @@ import * as _ from 'lodash';
 // Services
 import { TriplestoreService } from '../services/triplestore.service';
 
+
+
 @Component({
     selector: 'viewer-container',
     templateUrl: './viewer-container.component.html',
@@ -16,6 +18,7 @@ import { TriplestoreService } from '../services/triplestore.service';
 })
 export class ViewerContainerComponent implements OnInit {
 
+    @Input() urn: string;
     @ViewChild('mainContentPane') mainContentPaneEl: ElementRef;
 
     // Parameters returned from query field
@@ -26,7 +29,6 @@ export class ViewerContainerComponent implements OnInit {
     // Parameters retrieved from Forge API
     private bucketKey;
     private objectKey;
-    public urn;
 
     constructor(
         private tss: TriplestoreService
@@ -34,16 +36,25 @@ export class ViewerContainerComponent implements OnInit {
 
     ngOnInit() {
         //NB! should be retrieved through router module in a full implementation
-        this.bucketKey = 'niras_p101101';
-        this.objectKey = 'testprojekt_URIs.nwc';
-        this.getModelDetails();
+        // this.bucketKey = 'niras_p101101';
+        // this.objectKey = 'testprojekt_URIs.nwc';
+        // this.getModelDetails();
+        // console.log("urn: "+this.urn)
     }
 
-    private getModelDetails() {
-        // this.getObectGUID();
-        var objectId: string = 'urn:adsk.objects:os.object:'+encodeURI(this.bucketKey)+'/'+encodeURI(this.objectKey);
-        this.urn = btoa(objectId).split('=')[0];
+    // When changes in input data (urn)
+    ngOnChanges(changes: SimpleChanges){
+        if(this.urn && changes.urn.currentValue){
+            this.urn = changes.urn.currentValue;
+        }
     }
+
+    // private getModelDetails() {
+    //     // this.getObectGUID();
+    //     var objectId: string = 'urn:adsk.objects:os.object:'+encodeURI(this.bucketKey)+'/'+encodeURI(this.objectKey);
+    //     this.urn = btoa(objectId).split('=')[0];
+    //     console.log(this.urn)
+    // }
 
     onHChange() {
         //emitted after horizontal view change

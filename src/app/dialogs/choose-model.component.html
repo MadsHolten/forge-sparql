@@ -1,0 +1,19 @@
+<h2 mat-dialog-title>{{data.title}}</h2>
+<hr>
+<mat-dialog-content>
+    {{data.text}}
+    <br>
+    <br>
+    <mat-form-field>
+        <mat-select placeholder="Model" #selectedModel>
+            <mat-option *ngFor="let item of data.options" [value]="item.value">
+                {{ item.name }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</mat-dialog-content>
+<hr>
+<mat-dialog-actions>
+    <button mat-raised-button (click)="onCloseConfirm(selectedModel.value)">CONFIRM</button>&nbsp;
+    <button mat-raised-button (click)="onCloseCancel()">CANCEL</button>
+</mat-dialog-actions>

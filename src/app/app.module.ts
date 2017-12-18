@@ -34,13 +34,17 @@ import { QueryFieldComponent } from './forge-viewer/query-field/query-field.comp
 import { QueryResultTableComponent } from './forge-viewer/query-result-table/query-result-table.component';
 import { ForgeViewerComponent } from './forge-viewer/viewer/viewer.component';
 
+// Dialog components
+import { ChooseModelDialog } from './dialogs/choose-model.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     ViewerContainerComponent,
     QueryFieldComponent,
     QueryResultTableComponent,
-    ForgeViewerComponent
+    ForgeViewerComponent,
+    ChooseModelDialog
   ],
   imports: [
     BrowserModule,
@@ -66,6 +70,7 @@ import { ForgeViewerComponent } from './forge-viewer/viewer/viewer.component';
     FlexLayoutModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ChooseModelDialog]
 })
 export class AppModule { }
