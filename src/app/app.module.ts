@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 //Angular material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -34,18 +34,23 @@ import { QueryFieldComponent } from './forge-viewer/query-field/query-field.comp
 import { QueryResultTableComponent } from './forge-viewer/query-result-table/query-result-table.component';
 import { ForgeViewerComponent } from './forge-viewer/viewer/viewer.component';
 
+// Dialog components
+import { ChooseModelDialog } from './dialogs/choose-model.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     ViewerContainerComponent,
     QueryFieldComponent,
     QueryResultTableComponent,
-    ForgeViewerComponent
+    ForgeViewerComponent,
+    ChooseModelDialog
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatSelectModule,
@@ -66,6 +71,7 @@ import { ForgeViewerComponent } from './forge-viewer/viewer/viewer.component';
     FlexLayoutModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ChooseModelDialog]
 })
 export class AppModule { }

@@ -39,7 +39,7 @@ router.get('/', (req, res, next) => {
         })
     } else {
         // Perform query with reasoning
-        reasoner.queryEngine(query).then(qRes => {
+        reasoner.queryEngine(query,sources).then(qRes => {
             return sendResult(qRes);
         }).catch(err => {
             console.log(err);

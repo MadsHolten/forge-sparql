@@ -3,13 +3,28 @@ var fs = require('fs');
 h = new Hylar();
 
 module.exports = {
-    queryEngine: function(query){
-
+    queryEngine: function(query,sources){
         //Files and settings
         var mimeType = 'text/turtle';
         var files = [];
-        files.push('data/triples.ttl');
-        files.push('data/bot.ttl');
+        if(typeof sources !== "undefined") {
+            for(var i in sources){
+                // If the string contains http, use the full address
+                // If not, append data/ (then it's a local file)
+                if(paths[i].indexOf('http') === -1){
+                    var path = 'data/'+paths[i];
+                }else{
+                    var path = paths[i];
+                }
+                files.push(path);
+            }
+        }else{
+            // Default
+            files.push('data/triples.ttl');
+            files.push('data/bot.ttl');
+        }
+        console.log(sources)
+        
 
         //Get file content
         var triples = '';
