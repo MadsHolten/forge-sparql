@@ -16,6 +16,7 @@ import { Data, Option } from './choose-model.interface';
 
     private urn: string;
     public modelForm: FormGroup;
+    public filePaths;
   
     constructor(
       private fb: FormBuilder,
@@ -32,6 +33,7 @@ import { Data, Option } from './choose-model.interface';
         });
         // Set default file paths
         this.overwritePaths(this.data.options[0].filePaths);
+        this.filePaths = (<FormArray>this.modelForm.controls['paths']).controls;
     }
 
     // Initialize empty path
@@ -78,6 +80,7 @@ import { Data, Option } from './choose-model.interface';
         // Get model index
         var filePaths = model.filePaths;
         this.overwritePaths(filePaths);
+        this.filePaths = (<FormArray>this.modelForm.controls['paths']).controls;
     }
   
     onNoClick(): void {
@@ -85,10 +88,10 @@ import { Data, Option } from './choose-model.interface';
     }
 
     onCloseConfirm(ev) {
-        var name = ev.controls.name.value.name;
-        var urn = ev.controls.name.value.urn;
+        var name = ev.get('name').value.name;
+        var urn = ev.get('name').value.urn;
         var paths = []
-        _.each(ev.controls.paths.value, x => { paths.push(x.path) });
+        _.each(ev.get('paths').value, x => { paths.push(x.path) });
         var data: Option = {name: name, urn: urn, filePaths: paths};
         this.dialogRef.close(data);
     }

@@ -17,7 +17,7 @@
         <!-- list of paths -->
         <h4>Paths</h4>
         <div formArrayName="paths">
-            <div *ngFor="let address of modelForm.controls.paths.controls; let i=index">
+            <div *ngFor="let path of filePaths; let i=index">
 
                 <!-- Angular assigns array index as group name by default 0, 1, 2, ... -->
                 <div [formGroupName]="i">

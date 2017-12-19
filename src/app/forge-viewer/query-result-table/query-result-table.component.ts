@@ -19,7 +19,7 @@ export class QueryResultTableComponent implements OnChanges{
   @Input() queryTime: number;
 
   ngOnChanges(changes: SimpleChanges){
-    if(typeof changes.queryResult.currentValue !== "undefined" && changes.queryResult.currentValue.length > 0){
+    if(changes.queryResult.currentValue){
       //Extract columns
       this.displayedColumns = changes.queryResult.currentValue.head.vars;
 
