@@ -86,6 +86,9 @@ export class QueryFieldComponent {
   }
 
   private extractURIs(data){
+    if(!data){
+      return null;
+    }
     return _.chain(data.results.bindings)
                     .map(i => {
                       return _.filter(i, j => {

@@ -41,7 +41,13 @@ function executeQuery(store, query, accept){
 function loadMultiple(store,paths){
     var fileReads = [];
     for(var i in paths){
-        path = 'data/'+paths[i];
+        // If the string contains http, use the full address
+        // If not, append data/ (then it's a local file)
+        if(paths[i].indexOf('http') === -1){
+            var path = 'data/'+paths[i];
+        }else{
+            var path = paths[i];
+        }
         var getTriples = readFile(path)
             .then(buffer => buffer.toString())
             .then(triples => loadTriplesInStore(store, triples));

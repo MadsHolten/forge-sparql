@@ -25,24 +25,43 @@ import { Data, Option } from './choose-model.interface';
     ngOnInit() {
         // Initialize name to first option in data array
         this.modelForm = this.fb.group({
-            name: [this.data.options[0].name, [Validators.required]],
+            name: [this.data.options[0], [Validators.required]],
             paths: this.fb.array([
-                this.initPaths(),
+                this.initEmptyPath()
             ])
         });
+        // Set default file paths
+        this.overwritePaths(this.data.options[0].filePaths);
     }
 
-    initPaths() {
+    // Initialize empty path
+    initEmptyPath() {
         // initialize our address
         return this.fb.group({
             path: ['', Validators.required]
         });
     }
 
+    // Initialize paths from source
+    overwritePaths(paths) {
+        // Clear the paths that are already specified
+        this.clearPaths();
+        
+        // Append the paths from data array
+        const control = <FormArray>this.modelForm.controls['paths'];
+
+        for(var i in paths){
+            var path = this.fb.group({
+                path: [paths[i], Validators.required]
+            });
+            control.push(path);
+        }
+    }
+
     addPath() {
         // add path to the list
         const control = <FormArray>this.modelForm.controls['paths'];
-        control.push(this.initPaths());
+        control.push(this.initEmptyPath());
     }
 
     removePath(i: number) {
@@ -58,19 +77,7 @@ import { Data, Option } from './choose-model.interface';
     onModelChange(model){
         // Get model index
         var filePaths = model.filePaths;
-        
-        // Clear the paths that are already specified
-        this.clearPaths();
-
-        // Append the paths from data array
-        const control = <FormArray>this.modelForm.controls['paths'];
-
-        for(var i in filePaths){
-            var path = this.fb.group({
-                path: [filePaths[i], Validators.required]
-            });
-            control.push(path);
-        }
+        this.overwritePaths(filePaths);
     }
   
     onNoClick(): void {
@@ -81,10 +88,7 @@ import { Data, Option } from './choose-model.interface';
         var name = ev.controls.name.value.name;
         var urn = ev.controls.name.value.urn;
         var paths = []
-        _.each(ev.controls.paths.value, x => {
-            console.log(x.path);
-            paths.push(x.path)});
-        console.log(paths);
+        _.each(ev.controls.paths.value, x => { paths.push(x.path) });
         var data: Option = {name: name, urn: urn, filePaths: paths};
         this.dialogRef.close(data);
     }

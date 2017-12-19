@@ -9,7 +9,13 @@ module.exports = {
         var files = [];
         if(typeof sources !== "undefined") {
             for(var i in sources){
-                path = 'data/'+sources[i];
+                // If the string contains http, use the full address
+                // If not, append data/ (then it's a local file)
+                if(paths[i].indexOf('http') === -1){
+                    var path = 'data/'+paths[i];
+                }else{
+                    var path = paths[i];
+                }
                 files.push(path);
             }
         }else{
@@ -17,6 +23,7 @@ module.exports = {
             files.push('data/triples.ttl');
             files.push('data/bot.ttl');
         }
+        console.log(sources)
         
 
         //Get file content
