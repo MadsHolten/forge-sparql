@@ -1,0 +1,53 @@
+<h2 mat-dialog-title>{{data.title}}</h2>
+<form [formGroup]="modelForm" novalidate (ngSubmit)="onCloseConfirm(modelForm)">
+    <mat-dialog-content>
+
+        <!-- name -->
+        <h4>Model</h4>
+        <div class="form-group">
+            <mat-form-field class="full-width">
+                <mat-select placeholder="Model" (change)="onModelChange($event.value)" formControlName="name">
+                    <mat-option *ngFor="let item of data.options" [value]="item">
+                        {{ item.name }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        
+        <!-- list of paths -->
+        <h4>Paths</h4>
+        <div formArrayName="paths">
+            <div *ngFor="let address of modelForm.controls.paths.controls; let i=index">
+
+                <!-- Angular assigns array index as group name by default 0, 1, 2, ... -->
+                <div [formGroupName]="i">
+                    <!--path-->
+                    <div>
+                        <mat-form-field type="text" class="full-width">
+                            <input matInput placeholder="Path {{i + 1}}" formControlName="path">
+                            <button mat-button matSuffix mat-icon-button aria-label="Delete" (click)="removePath(i)">
+                                <mat-icon>close</mat-icon>
+                            </button>
+                        </mat-form-field>
+                        <!--display error message if street is not valid-->
+                        <!-- <p [hidden]="modelForm.controls.paths.controls[i].controls.path.valid">
+                            Path is required
+                        </p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-dialog-content>
+    <hr>
+    <mat-dialog-actions>
+        <!-- <button mat-raised-button type="submit" [disabled]="!modelForm.valid">CONFIRM</button>&nbsp; -->
+        <button mat-raised-button type="submit">CONFIRM</button>&nbsp;
+        <button mat-raised-button (click)="onCloseCancel()">CANCEL</button>
+    </mat-dialog-actions>
+</form>
+
+<div class="fabDiv">
+    <button mat-mini-fab class="addPath" (click)="addPath()" color="primary">
+        <mat-icon aria-label="Add path">add</mat-icon>
+    </button>
+</div>

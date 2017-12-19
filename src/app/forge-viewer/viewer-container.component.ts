@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
+import { Component, ViewChild, ElementRef, OnInit, Input } from '@angular/core';
 
 import * as _ from 'lodash';
 
@@ -8,6 +8,8 @@ import * as _ from 'lodash';
 // Services
 import { TriplestoreService } from '../services/triplestore.service';
 
+
+
 @Component({
     selector: 'viewer-container',
     templateUrl: './viewer-container.component.html',
@@ -16,6 +18,8 @@ import { TriplestoreService } from '../services/triplestore.service';
 })
 export class ViewerContainerComponent implements OnInit {
 
+    @Input() urn: string;
+    @Input() filePaths: string[];
     @ViewChild('mainContentPane') mainContentPaneEl: ElementRef;
 
     // Parameters returned from query field
@@ -26,23 +30,13 @@ export class ViewerContainerComponent implements OnInit {
     // Parameters retrieved from Forge API
     private bucketKey;
     private objectKey;
-    public urn;
 
     constructor(
         private tss: TriplestoreService
       ) { }
 
     ngOnInit() {
-        //NB! should be retrieved through router module in a full implementation
-        this.bucketKey = 'niras_p101101';
-        this.objectKey = 'testprojekt_URIs.nwc';
-        this.getModelDetails();
-    }
 
-    private getModelDetails() {
-        // this.getObectGUID();
-        var objectId: string = 'urn:adsk.objects:os.object:'+encodeURI(this.bucketKey)+'/'+encodeURI(this.objectKey);
-        this.urn = btoa(objectId).split('=')[0];
     }
 
     onHChange() {
@@ -57,7 +51,7 @@ export class ViewerContainerComponent implements OnInit {
     }
 
     log(ev){
-        console.log(ev);
+        
     }
 
 }

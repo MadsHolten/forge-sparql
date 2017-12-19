@@ -1,6 +1,6 @@
 import * as _ from 'underscore';
 
-import { Component, Input, EventEmitter, Output } from '@angular/core';
+import { Component, Input, EventEmitter, Output, OnChanges, SimpleChanges } from '@angular/core';
 
 //Services
 import { TriplestoreService } from '../../services/triplestore.service';
@@ -44,6 +44,7 @@ export class QueryFieldComponent {
     }
   ]
 
+  @Input() filePaths: string[];
   @Output() queryResult = new EventEmitter<Object>();
   @Output() returnedURIs = new EventEmitter<string[]>();
   @Output() queryTime = new EventEmitter<number>();
@@ -52,9 +53,16 @@ export class QueryFieldComponent {
     private tss: TriplestoreService
   ) { }
 
+  // When changes in input data (urn)
+  ngOnChanges(changes: SimpleChanges){
+      if(this.filePaths && changes.filePaths && changes.filePaths.currentValue){
+          this.filePaths = changes.filePaths.currentValue;
+      }
+  }
+
   performQuery(){
     var start: any = new Date();
-    this.tss.getQuery(this.query, 'select', this.reasoning)
+    this.tss.getQuery(this.query, 'select', this.reasoning, this.filePaths)
       .subscribe(res => {
         this.queryResult.emit(res);
         
@@ -78,6 +86,9 @@ export class QueryFieldComponent {
   }
 
   private extractURIs(data){
+    if(!data){
+      return null;
+    }
     return _.chain(data.results.bindings)
                     .map(i => {
                       return _.filter(i, j => {

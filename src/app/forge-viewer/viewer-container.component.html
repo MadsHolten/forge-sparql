@@ -20,6 +20,7 @@
                     <div class="split-pane-content-primary">
                         <div class="left">
                             <query-field
+                                [filePaths]="filePaths"
                                 (queryResult)="queryResult = $event"
                                 (returnedURIs)="filterByURIs = $event"
                                 (queryTime)="queryTime = $event">
