@@ -39,6 +39,10 @@ export class ViewerContainerComponent implements OnInit {
 
     }
 
+    selectionChanged(ev){
+        console.log(ev);
+    }
+
     onHChange() {
         //emitted after horizontal view change
         console.log("Changed H pane");

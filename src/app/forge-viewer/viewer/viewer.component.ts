@@ -10,10 +10,14 @@ import { Component,
          SimpleChanges } from '@angular/core';
 
 import { ForgeAuthService } from '../../services/forge-auth.service';
-import * as _ from 'underscore';
+import { ForgeViewerService } from '../../services/forge-viewer.service';
 
-//Tell TS that Autodesk exists as a variable/object somewhere globally
+import * as _ from 'underscore';
+import * as copy from "copy-to-clipboard";
+
+//Tell TS that Autodesk and THREE exists as a variable/object somewhere globally
 declare const Autodesk: any;
+declare const THREE: any;
 
 export interface Token {
   access_token: string;
@@ -26,7 +30,7 @@ export interface Token {
   selector: 'forge-viewer',
   templateUrl: './viewer.component.html',
   styleUrls: ['./viewer.component.css'],
-  providers: [ ForgeAuthService ]
+  providers: [ ForgeAuthService, ForgeViewerService ]
 })
 
 export class ForgeViewerComponent implements OnInit, OnDestroy {
@@ -39,12 +43,14 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
 
   constructor(
     private elementRef: ElementRef,
-    private fas: ForgeAuthService
+    private fas: ForgeAuthService,
+    private fvs: ForgeViewerService
   ) { }
 
   @Input() urn: string;
   @Input() filterByURIs: string[];
   @Output() selectedObject = new EventEmitter<Object>();
+  @Output() selectedURI = new EventEmitter<Object>();
 
   // When initializing viewer
   ngOnInit() {
@@ -80,7 +86,7 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
       // Generate promises for all URI searches
       var promises = [];
       for(var i in URIs){
-        promises.push(this.findElementByURI(URIs[i]));
+        promises.push(this.fvs.findElementByURI(URIs[i],this.viewer));
       }
 
       // When all promises return
@@ -143,6 +149,9 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
         this.loadDocument();
       });
     }
+
+    // Menus etc.
+    this.addCopyURIItem()
   }
 
   public loadDocument() {
@@ -179,51 +188,75 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
     viewer.fitToView();
   }
 
-  //Event when geometry has changed
+  // Event when geometry selection has changed
   private selectionChanged(event: any) {
     const model = event.model;
     const dbIds = event.dbIdArray;
 
-    //Get properties of object
-    this.viewer.getProperties(dbIds[0], (props) => {
-      //Emit event
-      this.selectedObject.emit(props);
+    // Get properties of object
+    this.fvs.getProperties(dbIds[0],this.viewer).then(propData => {
+      // Emit event
+      this.selectedObject.emit(propData);
+    });
+
+    // Get URI
+    this.fvs.findURIbyDbId(dbIds,this.viewer).then(d => {
+      if(typeof d[0] !== 'undefined'){
+        // Emit event
+        this.selectedURI.emit(d[0].properties[0].displayValue);
+      }
     })
+
   }
 
-  // Find an element by searching for its URI
-  private findElementByURI(URI){
-    return new Promise((resolve, reject) => {
-      this.viewer.search('"' + URI + '"', dbIDs => {
-        // Just return the URI if it is not a room, space or level
-        if(!URI.includes('Space') && !URI.includes('Room') && !URI.includes('Levels')) resolve(dbIDs);
-        
-        // Special case for rooms / spaces / levels
-        else {
-          // This is some workaround in order to return only elements. 
-          // It is not the most correct approach and might break in the future
-          var spaceID = _.filter(dbIDs, dbID => {
-            //What properties are present on the node?
-            this.getProperties(dbID).then(propData => {
-              var pd: any = _.clone(propData);
-              // Check if it is a room
-              var findit = pd.properties.filter(item => {
-                  return (item.displayName === 'Type' 
-                  && item.displayValue === 'Rooms'); 
-              });
-              if(findit.length > 0) resolve(dbID);
-            })
-          })
+  // MODIFY MENUS ETC.
+
+  // Add button to change color of the item
+  private addChangeColorItem(){
+    this.viewer.registerContextMenuCallback(  'MyChangingColorMenuItems', ( menu, status ) => {
+        if( status.hasSelected ) {
+            menu.push({
+                title: 'Override color of selected elements to the red',
+                target: () => {
+                    const selSet = this.viewer.getSelection();
+                    this.viewer.clearSelection();
+
+                    const color = new THREE.Vector4( 255 / 255, 0, 0, 1 );
+                    for( let i = 0; i < selSet.length; i++ ) {
+                        this.viewer.setThemingColor( selSet[i], color );
+                    }
+                }
+            });
+        } else {
+            menu.push({
+                title: 'Clear overridden color',
+                target: () => {
+                    this.viewer.clearThemingColors();
+                }
+            });
         }
-      }, err => {
-        reject(err);
-      })
     });
   }
 
-  private getProperties(dbid){
-    return new Promise((resolve, reject) => {
-      this.viewer.getProperties(dbid, res => resolve(res), err => reject(err))
+  // Add button to Add the URI of the selected element to the clipboard
+  private addCopyURIItem(){
+    this.viewer.registerContextMenuCallback(  'MyCopyURIMenuItems', ( menu, status ) => {
+      menu.push({
+          title: 'Copy URI to clipboard',
+          target: () => {
+              const selSet = this.viewer.getSelection();
+              console.log(selSet);
+              this.viewer.clearSelection();
+
+              // Get URI
+              this.fvs.findURIbyDbId(selSet,this.viewer).then(d => {
+                if(typeof d[0] !== 'undefined'){
+                  // Copy to clipboard
+                  copy(d[0].properties[0].displayValue);
+                }
+              })
+          }
+      });
     });
   }
 

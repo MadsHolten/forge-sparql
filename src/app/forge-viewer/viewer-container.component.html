@@ -7,7 +7,12 @@
             (on-ended-resizing)="onHChange()">
         <div class="split-pane-content-primary" #mainContentPane style="height: 100%;">
             <div class="upper">
-                <forge-viewer [filterByURIs]="filterByURIs" [urn]="urn" (selectedObject)="log($event)"></forge-viewer>
+                <!-- Forge viewer -->
+                <forge-viewer 
+                    [filterByURIs]="filterByURIs" 
+                    [urn]="urn" 
+                    (selectedObject)="log($event)"
+                    (selectedURI)="selectionChanged($event)"></forge-viewer>
             </div>
         </div>
         <div class="split-pane-content-secondary" style="height:100%;">
@@ -19,6 +24,7 @@
                         (on-ended-resizing)="onVChange()">
                     <div class="split-pane-content-primary">
                         <div class="left">
+                            <!-- Query Field -->
                             <query-field
                                 [filePaths]="filePaths"
                                 (queryResult)="queryResult = $event"
@@ -29,6 +35,7 @@
                     </div>
                     <div class="split-pane-content-secondary">
                         <div class="right">
+                            <!-- Query Results -->
                             <query-result-table [queryResult]="queryResult" [queryTime]="queryTime"></query-result-table>
                         </div>
                     </div>

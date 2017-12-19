@@ -38,7 +38,7 @@ export class TriplestoreService {
             this.options.params.sources = filePaths.join();
         }
         
-        return this.http.get('/endpoint', this.options);
+        return this.http.get('http://localhost:3000/endpoint', this.options);
     }
 
 }
