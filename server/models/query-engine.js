@@ -6,7 +6,7 @@ var _ = require('lodash');
 var prefixes = require('../../data/defaultPrefixes.json');
 
 // Default path
-var path = 'data/triples.ttl';
+var path = 'triples.ttl';
 
 //Promisify callback functions
 var readFile = Promise.promisify(fs.readFile);
@@ -40,6 +40,7 @@ function executeQuery(store, query, accept){
 // Function to load multiple triples in store
 function loadMultiple(store,paths){
     var fileReads = [];
+    console.log(paths)
     for(var i in paths){
         // If the string contains http, use the full address
         // If not, append data/ (then it's a local file)
