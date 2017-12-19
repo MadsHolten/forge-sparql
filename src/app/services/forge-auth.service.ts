@@ -31,7 +31,7 @@ export class ForgeAuthService {
 
     public generateNewToken() {
         return this.http
-            .get('http://localhost:3000/api/authenticate')
+            .get('/api/authenticate')
             .map((token: Token) => {
                 let currentTime:number = (new Date()).getTime()/1000;
                 let tokenExpire:number = currentTime+token.expires_in;
