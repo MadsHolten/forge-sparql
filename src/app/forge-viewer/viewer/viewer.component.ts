@@ -75,6 +75,7 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
     }
     if(this.filterByURIs && changes.filterByURIs && changes.filterByURIs.currentValue){
       var URIs = changes.filterByURIs.currentValue;
+      console.log(URIs);
 
       // Generate promises for all URI searches
       var promises = [];
