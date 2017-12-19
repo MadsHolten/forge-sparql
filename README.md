@@ -8,6 +8,7 @@ See a running demo [here](https://forge-sparql.herokuapp.com/)
 ## Install
 
 You need node.js installed on your machine. Get it here: `https://nodejs.org/en/`. Tested with version 6.9.1.
+Also node gyp is needed to run Hylar. Get it here: `https://github.com/nodejs/node-gyp`
 
 1) Forge credentials are defined in `server/config/forge-api.ts` or preferably by environment variables `FORGE_ID` and `FORGE_SECRET`
 2) Currently model data is hardcoded in `src/app/forge-viewer/viewer-container/viewer-container.component.ts` - should be stated in GUI
