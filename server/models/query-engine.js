@@ -27,6 +27,15 @@ function executeQuery(store, query, accept){
     start = Date.now();
     return new Promise((resolve, reject) => {
         store.execute(query, (err, res) => {
+            // check that it doesn't return null results
+            _.each(res, x => {
+                for(var key in x) {
+                    if(!x[key]){
+                        reject("Query returned no results");
+                    }
+                }
+            })
+
             if(err) reject(err);
             end = Date.now();
             elapsed = (end-start)/1000;

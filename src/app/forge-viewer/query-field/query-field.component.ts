@@ -88,19 +88,20 @@ export class QueryFieldComponent {
   private extractURIs(data){
     if(!data){
       return null;
+    }else if(data.results){
+        return _.chain(data.results.bindings)
+          .map(i => {
+            return _.filter(i, j => {
+              if(j.type == 'uri' || j.token == 'uri' && !j.value.startsWith("tag:/")){
+                return true;
+              }
+              return false;
+            })
+          })
+          .map(i => _.map(i, j => j.value))
+          .flatten()
+          .value();
     }
-    return _.chain(data.results.bindings)
-                    .map(i => {
-                      return _.filter(i, j => {
-                        if(j.type == 'uri' || j.token == 'uri' && !j.value.startsWith("tag:/")){
-                          return true;
-                        }
-                        return false;
-                      })
-                    })
-                    .map(i => _.map(i, j => j.value))
-                    .flatten()
-                    .value();
   }
 
 }

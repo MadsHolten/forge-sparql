@@ -35,7 +35,7 @@ router.get('/', (req, res, next) => {
             return sendResult(qRes);
         }).catch(err => {
             console.log(err);
-            next(err);
+            res.send(err);
         })
     } else {
         // Perform query with reasoning
@@ -43,7 +43,7 @@ router.get('/', (req, res, next) => {
             return sendResult(qRes);
         }).catch(err => {
             console.log(err);
-            next(err);
+            res.send(err);
         })
     }
 

@@ -11,7 +11,9 @@ var app = express();
 var authRoutes = require('./routes/auth');
 var bucketRoutes = require('./routes/bucket');
 var objectRoutes = require('./routes/object');
+
 var endpointRoutes = require('./routes/endpoint');
+var forgeRoutes = require('./routes/forge');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -65,6 +67,11 @@ app.use('/api', objectRoutes);
  * POST     /endpoint               Do get query (query as body element)
  */
 app.use('/endpoint', endpointRoutes);
+/**
+ * Forge model data routes
+ * GET      /forge/:urn/manifest    Get manifest
+ */
+app.use('/api', forgeRoutes);
 
 //Handle errors
 app.use((err, req, res, next) => {

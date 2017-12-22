@@ -11,6 +11,7 @@ import { Component,
 
 import { ForgeAuthService } from '../../services/forge-auth.service';
 import { ForgeViewerService } from '../../services/forge-viewer.service';
+import { ForgePropertiesService } from '../../services/forge-properties.service';
 
 import * as _ from 'underscore';
 import * as copy from "copy-to-clipboard";
@@ -30,7 +31,7 @@ export interface Token {
   selector: 'forge-viewer',
   templateUrl: './viewer.component.html',
   styleUrls: ['./viewer.component.css'],
-  providers: [ ForgeAuthService, ForgeViewerService ]
+  providers: [ ForgeAuthService, ForgeViewerService, ForgePropertiesService ]
 })
 
 export class ForgeViewerComponent implements OnInit, OnDestroy {
@@ -40,11 +41,13 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
   lmvDoc: any;
   viewables: any;     //Holds the viewables ie. all geometry 2D/3D that can be rendered
   indexViewable: number; //Holds the index of the view to load
+  properties: any;    //Holds all the properties of the model
 
   constructor(
     private elementRef: ElementRef,
     private fas: ForgeAuthService,
-    private fvs: ForgeViewerService
+    private fvs: ForgeViewerService,
+    private fps: ForgePropertiesService
   ) { }
 
   @Input() urn: string;
@@ -59,8 +62,8 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
 
   // When view is initialized
   ngAfterViewInit() {
-    console.log(this.urn);
     this.launchViewer();
+    this.getProperties();
   }
 
   // When instance is destroyed
@@ -78,6 +81,7 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
     if(this.urn && changes.urn && changes.urn.currentValue){
       this.urn = changes.urn.currentValue;
       this.refreshViewer();
+      this.getProperties();
     }
     if(this.filterByURIs && changes.filterByURIs && changes.filterByURIs.currentValue){
       var URIs = changes.filterByURIs.currentValue;
@@ -102,6 +106,15 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
           // this.viewer.setColorMaterial(ids,0xff0000);
         })
     }
+  }
+
+  // Get the model properties
+  public getProperties() {
+    this.fps.getProperties(this.urn).subscribe(res => {
+      console.log(res);
+    }, err => {
+      console.log(err);
+    });
   }
 
   public refreshViewer() {
