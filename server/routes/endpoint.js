@@ -49,14 +49,14 @@ router.get('/', (req, res, next) => {
 
     // Return result as either turtle or JSON
     var sendResult = function(result){
-        if(accept == 'application/json'){
+        if(accept == 'application/json' || accept == 'application/sparql-results+json'){
+            res.set('Content-Type', 'application/sparql-results+json');
             res.send(queryEngine.sparqlJSON(result));
         }else if(accept == 'text/turtle'){
+            res.set('Content-Type', 'text/turtle');
             res.send(result);
         }
     }
-
-
 
 });
 
