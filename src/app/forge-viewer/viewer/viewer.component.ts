@@ -85,8 +85,7 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
     }
     if(this.filterByURIs && changes.filterByURIs && changes.filterByURIs.currentValue){
       var URIs = changes.filterByURIs.currentValue;
-      console.log(URIs);
-
+      
       // Generate promises for all URI searches
       var promises = [];
       for(var i in URIs){
@@ -97,8 +96,16 @@ export class ForgeViewerComponent implements OnInit, OnDestroy {
       Promise.all(promises)
         .then(d => {
           var ids = _.chain(d).flatten().uniq().value();
-          console.log(ids);
-          this.viewer.isolateById(ids)
+
+          // Isolate selected if any returned
+          if(ids.length > 0){
+            this.viewer.isolateById(ids);
+          }
+          
+          // If none returned, isolate none
+          else{
+            this.viewer.showAll();
+          }
 
           /**COLORS NOT WORKING */
           // //load the extension 

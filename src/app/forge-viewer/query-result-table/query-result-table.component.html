@@ -1,5 +1,4 @@
 <div class="table-container mat-elevation-z8">
-        
     <div class="table-header" *ngIf="queryTime">
         <span>{{resultLength}} results</span>
         <!-- <span fxFlex="grow"></span> -->
@@ -20,7 +19,4 @@
         <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
         <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
     </mat-table>
-    <mat-card *ngIf="!displayedColumns">
-    No query results
-    </mat-card>
 </div>

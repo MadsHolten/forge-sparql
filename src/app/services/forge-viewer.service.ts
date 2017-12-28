@@ -15,6 +15,8 @@ export class ForgeViewerService {
     public findElementByURI(URI,viewer){
         return new Promise((resolve, reject) => {
             viewer.search('"' + URI + '"', dbIDs => {
+                //NB! Revit models don't have spaces
+                
                 // Just return the URI if it is not a room, space or level
                 if(!URI.includes('Space') && !URI.includes('Room') && !URI.includes('Levels')) resolve(dbIDs);
                 

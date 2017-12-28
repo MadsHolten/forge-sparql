@@ -27,6 +27,8 @@ function executeQuery(store, query, accept){
     start = Date.now();
     return new Promise((resolve, reject) => {
         store.execute(query, (err, res) => {
+            if(err) reject(err);
+
             // check that it doesn't return null results
             _.each(res, x => {
                 for(var key in x) {
@@ -36,7 +38,6 @@ function executeQuery(store, query, accept){
                 }
             })
 
-            if(err) reject(err);
             end = Date.now();
             elapsed = (end-start)/1000;
             var message = `Returned ${res.length} triples in ${elapsed} seconds`;
@@ -49,7 +50,6 @@ function executeQuery(store, query, accept){
 // Function to load multiple triples in store
 function loadMultiple(store,paths){
     var fileReads = [];
-    console.log(paths)
     for(var i in paths){
         // If the string contains http, use the full address
         // If not, append data/ (then it's a local file)
@@ -87,9 +87,7 @@ module.exports = {
         // When all promises are returned
         return createStore().then(store => {
             // load triples in store and return promise
-            return loadMultiple(store,paths).then(d => {        
-                //Define prefix
-                store.setPrefix('bot', 'https://w3id.org/bot#');
+            return loadMultiple(store,paths).then(d => {     
                 store.registerDefaultProfileNamespaces();
 
                 return executeQuery(store, query);
@@ -100,7 +98,6 @@ module.exports = {
         return getTriples;
     },
     sparqlJSON: function sparqlJSON(data){
-
         console.log(data);
 
         var map = {

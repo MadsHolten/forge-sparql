@@ -34,16 +34,15 @@ router.get('/', (req, res, next) => {
         queryEngine.queryEngine(query,sources).then(qRes => {
             return sendResult(qRes);
         }).catch(err => {
-            console.log(err);
-            res.send(err);
+            res.status(500).send(err);
         })
     } else {
         // Perform query with reasoning
         reasoner.queryEngine(query,sources).then(qRes => {
+            console.log(qRes);
             return sendResult(qRes);
         }).catch(err => {
-            console.log(err);
-            res.send(err);
+            res.status(500).send(err);
         })
     }
 

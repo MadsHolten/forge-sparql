@@ -4,6 +4,7 @@ h = new Hylar();
 
 module.exports = {
     queryEngine: function(query,sources){
+        
         //Files and settings
         var mimeType = 'text/turtle';
         var files = [];
@@ -11,10 +12,10 @@ module.exports = {
             for(var i in sources){
                 // If the string contains http, use the full address
                 // If not, append data/ (then it's a local file)
-                if(paths[i].indexOf('http') === -1){
-                    var path = 'data/'+paths[i];
+                if(sources[i].indexOf('http') === -1){
+                    var path = 'data/'+sources[i];
                 }else{
-                    var path = paths[i];
+                    var path = sources[i];
                 }
                 files.push(path);
             }
@@ -23,8 +24,7 @@ module.exports = {
             files.push('data/triples.ttl');
             files.push('data/bot.ttl');
         }
-        console.log(sources)
-        
+       
 
         //Get file content
         var triples = '';
