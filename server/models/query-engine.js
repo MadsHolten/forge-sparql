@@ -8,15 +8,19 @@ var prefixes = require('../../data/defaultPrefixes.json');
 var path = 'triples.ttl';
 
 //Promisify callback functions
-var readFile = Promise.promisify(fs.readFile);
 var createStore = Promise.promisify(rdfstore.create);
+
+// Store
+var store;
 
 // Function to load triples into an in-memory store
 function loadTriplesInStore(store, triples){
     return new Promise((resolve, reject) => {
-        store.load('text/turtle', triples, (err, res) => {
+        store.load('text/turtle', triples, (err, size) => {
             if(err) reject(err);
-            resolve(res);
+            var message = `Loaded ${size} triples in store`;
+            console.log(message);
+            resolve(size);
         })
     })
 }
@@ -39,21 +43,38 @@ function executeQuery(store, query, accept){
 
 // Function to load multiple triples in store
 function loadMultiple(store,paths){
-    var fileReads = [];
-    for(var i in paths){
+
+    var promises= paths.map(path => {
         // If the string contains http, use the full address
         // If not, append data/ (then it's a local file)
-        if(paths[i].indexOf('http') === -1){
-            var path = 'data/'+paths[i];
+        if(path.indexOf('http') === -1){
+            path = 'data/'+path;
         }else{
-            var path = paths[i];
+            path = path;
         }
-        var getTriples = readFile(path)
-            .then(buffer => buffer.toString())
-            .then(triples => loadTriplesInStore(store, triples));
-        fileReads.push(getTriples);
-    }
-    return Promise.all(fileReads);
+
+        // Return promise
+        return new Promise((resolve, reject) => {
+            // Read file content
+            fs.readFile(path, 'utf8', (err, data) => {
+                if(err){
+                   resolve(err);
+                }else{
+                   resolve(data);
+                }
+            });
+        });
+    });
+
+    // Load data in store
+    return Promise.all(promises).then(fileContent => {
+        triples = ''
+        fileContent.forEach(data => {
+            triples+=data+'\n';
+        })
+        return loadTriplesInStore(store, triples);
+    });
+
 }
 
 function renameKeys(obj, newKeys) {
@@ -88,17 +109,16 @@ module.exports = {
             var paths = sources;
         }
 
-        var store;
-
         // Create a store
         return createStore()
             .then(store => {
-                // Assign store to variable
+                // Assign store to global variable
                 this.store = store;
+
                 // load triples in store and return promise
                 return loadMultiple(store,paths)
             })
-            .then(() => {
+            .then(d => {
                 // When data is loaded in store, execute query on it
                 return executeQuery(this.store, query);
             });
