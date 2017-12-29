@@ -19,7 +19,8 @@ import { MatButtonModule,
          MatSlideToggleModule,
          MatCardModule,
          MatProgressSpinnerModule,
-         MatTooltipModule } from '@angular/material';
+         MatTooltipModule,
+         MatSnackBarModule } from '@angular/material';
 
 // Split pane
 import { SplitPaneModule } from 'ng2-split-pane/lib/ng2-split-pane';
@@ -67,6 +68,7 @@ import { ChooseModelDialog } from './dialogs/choose-model.component';
     MatCardModule,
     MatProgressSpinnerModule,
     MatTooltipModule,
+    MatSnackBarModule,
     SplitPaneModule,
     FlexLayoutModule
   ],

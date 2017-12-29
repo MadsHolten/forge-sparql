@@ -1,7 +1,6 @@
 var rdfstore = require('rdfstore');
 var Promise = require('bluebird');
 var fs = require('fs');
-var rename = require('rename');
 var _ = require('lodash');
 var prefixes = require('../../data/defaultPrefixes.json');
 
@@ -28,15 +27,6 @@ function executeQuery(store, query, accept){
     return new Promise((resolve, reject) => {
         store.execute(query, (err, res) => {
             if(err) reject(err);
-
-            // check that it doesn't return null results
-            _.each(res, x => {
-                for(var key in x) {
-                    if(!x[key]){
-                        reject("Query returned no results");
-                    }
-                }
-            })
 
             end = Date.now();
             elapsed = (end-start)/1000;
@@ -66,6 +56,14 @@ function loadMultiple(store,paths){
     return Promise.all(fileReads);
 }
 
+function renameKeys(obj, newKeys) {
+    const keyValues = Object.keys(obj).map(key => {
+        const newKey = newKeys[key] || key;
+        return { [newKey]: obj[key] };
+    });
+    return Object.assign({}, ...keyValues);
+}
+
 module.exports = {
     addPrefixes: function(query){
         // Append all default prefixes from data/defaultPrefixes.json to the query
@@ -77,50 +75,66 @@ module.exports = {
         return fullQuery;
     },
     queryEngine: function(query,sources){
+        // If sources is undefined, use default
         if(typeof sources === "undefined") {
             var paths = [path];
-        }else if(typeof sources === "string"){
+        }
+        // If sources is a string, append it to an array
+        else if(typeof sources === "string"){
             var paths = [sources];
-        }else{
+        }
+        // Else, just use them as they are
+        else{
             var paths = sources;
         }
-        // When all promises are returned
-        return createStore().then(store => {
-            // load triples in store and return promise
-            return loadMultiple(store,paths).then(d => {     
-                store.registerDefaultProfileNamespaces();
 
-                return executeQuery(store, query);
+        var store;
+
+        // Create a store
+        return createStore()
+            .then(store => {
+                // Assign store to variable
+                this.store = store;
+                // load triples in store and return promise
+                return loadMultiple(store,paths)
+            })
+            .then(() => {
+                // When data is loaded in store, execute query on it
+                return executeQuery(this.store, query);
             });
-        })
     },
     getTriples: function(){
         return getTriples;
     },
     sparqlJSON: function sparqlJSON(data){
-        console.log(data);
+        // Get variable keys
+        var vars = _.keysIn(data[0]);
+        
+        // check that it doesn't return null results
+        if(data[0][vars[0]] == null){
+            return {status: 400, data: "Query returned no results"};
+        }
 
+        // Flatten object array
+        var b = _.flatMap(data);
+
+        // Rename keys according to below mapping table
         var map = {
-            token : "type",
-
+            token: "type",
+            type: "datatype",
+            lang: "xml:lang"
         };
 
-        var vars = _.keysIn(data[0]);
+        // Loop over data to rename the keys
+        for(var i in b){
+            for(var key in vars){
+                b[i][vars[key]] = renameKeys(b[i][vars[key]], map)
+            }
+        }
 
-        // Correct bindings by flattening the object array,
-        // and renaming keys
-        var b = _.flatMap(data);
-        // bindings = []
-        // for (var i in b) {
-        //     var obj = rename(b[i], (key) => {
-        //         if (key === 'type') return 'datatype';
-        //         if (key === 'token') return 'type';
-        //         if (key === 'lang') return 'xml:lang';
-        //         return key;
-        //     });
-        //     bindings.push(obj);
-        // }
-        var res = {head: {vars: vars}, results: {bindings: b}};
-        return res;
+        // Re-format data
+        var data = {head: {vars: vars}, results: {bindings: b}};
+
+        return {status: 200, data: data};
     }
 }

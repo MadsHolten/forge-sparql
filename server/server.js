@@ -73,6 +73,11 @@ app.use('/endpoint', endpointRoutes);
  */
 app.use('/api', forgeRoutes);
 
+// Catch unhandled rejections
+process.on('unhandledRejection', (reason) => {
+    res.status(500).send(reason);
+});
+
 //Handle errors
 app.use((err, req, res, next) => {
     if(!err){

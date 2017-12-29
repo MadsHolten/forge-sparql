@@ -19,8 +19,8 @@ export class QueryResultTableComponent implements OnChanges{
   @Input() queryTime: number;
 
   ngOnChanges(changes: SimpleChanges){
+    // If a result has been returned
     if(changes.queryResult.currentValue && changes.queryResult.currentValue.head.vars.length > 0){
-      console.log(changes.queryResult.currentValue);
       //Extract columns
       this.displayedColumns = changes.queryResult.currentValue.head.vars;
 
@@ -33,8 +33,9 @@ export class QueryResultTableComponent implements OnChanges{
 
       //Load data source
       this.dataSource = new ExampleDataSource();
+    
+    // If no result has been returned
     }else{
-      console.log("No res")
       this.displayedColumns = [];
       data = [];
       this.resultLength = data.length;

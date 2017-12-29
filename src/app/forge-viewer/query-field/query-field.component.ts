@@ -1,4 +1,5 @@
 import * as _ from 'underscore';
+import {MatSnackBar} from '@angular/material';
 
 import { Component, Input, EventEmitter, Output, OnChanges, SimpleChanges } from '@angular/core';
 
@@ -50,7 +51,8 @@ export class QueryFieldComponent {
   @Output() queryTime = new EventEmitter<number>();
 
   constructor(
-    private tss: TriplestoreService
+    private tss: TriplestoreService,
+    public snackBar: MatSnackBar
   ) { }
 
   // When changes in input data (urn)
@@ -75,8 +77,16 @@ export class QueryFieldComponent {
         var URIs = this.extractURIs(res);
         this.returnedURIs.emit(URIs);
       }, err => {
-        console.log(err);
+        if(err.error){
+          this.showError(err.error);
+        }
       });
+  }
+
+  showError(message: string) {
+    this.snackBar.open(message, 'Dismiss', {
+      duration: 2000,
+    });
   }
 
   clear(){

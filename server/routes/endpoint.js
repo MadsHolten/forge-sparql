@@ -39,7 +39,6 @@ router.get('/', (req, res, next) => {
     } else {
         // Perform query with reasoning
         reasoner.queryEngine(query,sources).then(qRes => {
-            console.log(qRes);
             return sendResult(qRes);
         }).catch(err => {
             res.status(500).send(err);
@@ -50,7 +49,8 @@ router.get('/', (req, res, next) => {
     var sendResult = function(result){
         if(accept == 'application/json' || accept == 'application/sparql-results+json'){
             res.set('Content-Type', 'application/sparql-results+json');
-            res.send(queryEngine.sparqlJSON(result));
+            var formatted = queryEngine.sparqlJSON(result);
+            res.status(formatted.status).send(formatted.data);
         }else if(accept == 'text/turtle'){
             res.set('Content-Type', 'text/turtle');
             res.send(result);
