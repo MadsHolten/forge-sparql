@@ -1,4 +1,4 @@
-import { Component, OnInit, OnChanges, SimpleChanges, ViewChild, ElementRef, Input, HostListener } from '@angular/core';
+import { Component, OnInit, OnDestroy, OnChanges, SimpleChanges, ViewChild, ElementRef, Input, HostListener } from '@angular/core';
 import * as N3 from 'n3';
 import * as _ from 'lodash';
 import * as screenfull from 'screenfull';
@@ -43,7 +43,7 @@ export interface Graph {
   styleUrls: ['./query-result-graph.component.css']
 })
 
-export class QueryResultGraphComponent implements OnInit {
+export class QueryResultGraphComponent implements OnInit, OnDestroy {
 
   private graph: Graph;
   private svg;
@@ -93,6 +93,11 @@ export class QueryResultGraphComponent implements OnInit {
       this.cleanGraph();
       this.attachData();
     }
+  }
+
+  // When instance is destroyed
+  ngOnDestroy() {
+    d3.selectAll("svg").remove();
   }
 
   // Redraw on resize
