@@ -33,6 +33,7 @@ import { AppComponent } from './app.component';
 import { ViewerContainerComponent } from './forge-viewer/viewer-container.component';
 import { QueryFieldComponent } from './forge-viewer/query-field/query-field.component';
 import { QueryResultTableComponent } from './forge-viewer/query-result-table/query-result-table.component';
+import { QueryResultGraphComponent } from './forge-viewer/query-result-graph/query-result-graph.component';
 import { ForgeViewerComponent } from './forge-viewer/viewer/viewer.component';
 
 // Dialog components
@@ -44,6 +45,7 @@ import { ChooseModelDialog } from './dialogs/choose-model.component';
     ViewerContainerComponent,
     QueryFieldComponent,
     QueryResultTableComponent,
+    QueryResultGraphComponent,
     ForgeViewerComponent,
     ChooseModelDialog
   ],

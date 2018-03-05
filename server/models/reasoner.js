@@ -40,20 +40,20 @@ module.exports = {
         //Do reasoning and run query
         start = Date.now();
         return h.load(triples, mimeType)
-        .then(response => {
-            if(response){
-                return h.query(query);
-            }else{
-                throw "Graph saturation failed.";
-            }
-        })
-        .then(res => {
-            end = Date.now();
-            elapsed = (end-start)/1000;
-            var message = `Returned ${res.length} triples in ${elapsed} seconds`;
-            console.log(message);
-            return res;
-        });
+            .then(response => {
+                if(response){
+                    return h.query(query);
+                }else{
+                    throw "Graph saturation failed.";
+                }
+            })
+            .then(res => {
+                end = Date.now();
+                elapsed = (end-start)/1000;
+                var message = `Returned ${res.length} triples in ${elapsed} seconds`;
+                console.log(message);
+                return res;
+            });
 
     }
 }

@@ -722,3 +722,55 @@ Fri Dec 29 2017 15:03:36 GMT+0100 (Romance Standard Time) [31mUnhandled rejecti
     at tryOnImmediate (timers.js:610:5)
     at processImmediate [as _immediateCallback] (timers.js:582:5)[0m
 
+Mon Mar 05 2018 08:50:10 GMT+0100 (Romance Standard Time) Reasoner set as incremental.
+Mon Mar 05 2018 08:50:10 GMT+0100 (Romance Standard Time) 899 triples loaded.
+Mon Mar 05 2018 08:50:10 GMT+0100 (Romance Standard Time) Classification started.
+Mon Mar 05 2018 08:50:10 GMT+0100 (Romance Standard Time) Registering derivations to dictionary...
+Mon Mar 05 2018 08:50:10 GMT+0100 (Romance Standard Time) Registered successfully.
+Mon Mar 05 2018 08:50:10 GMT+0100 (Romance Standard Time) Classification succeeded.
+Mon Mar 05 2018 08:50:17 GMT+0100 (Romance Standard Time) 899 triples loaded.
+Mon Mar 05 2018 08:50:17 GMT+0100 (Romance Standard Time) Classification started.
+Mon Mar 05 2018 08:50:17 GMT+0100 (Romance Standard Time) Registering derivations to dictionary...
+Mon Mar 05 2018 08:50:17 GMT+0100 (Romance Standard Time) Registered successfully.
+Mon Mar 05 2018 08:50:17 GMT+0100 (Romance Standard Time) Classification succeeded.
+Mon Mar 05 2018 08:51:06 GMT+0100 (Romance Standard Time) Reasoner set as incremental.
+Mon Mar 05 2018 08:51:06 GMT+0100 (Romance Standard Time) 899 triples loaded.
+Mon Mar 05 2018 08:51:06 GMT+0100 (Romance Standard Time) Classification started.
+Mon Mar 05 2018 08:51:06 GMT+0100 (Romance Standard Time) Registering derivations to dictionary...
+Mon Mar 05 2018 08:51:06 GMT+0100 (Romance Standard Time) Registered successfully.
+Mon Mar 05 2018 08:51:06 GMT+0100 (Romance Standard Time) Classification succeeded.
+Mon Mar 05 2018 09:47:00 GMT+0100 (Romance Standard Time) Error: getaddrinfo ENOENT developer.api.autodesk.com:443
+Mon Mar 05 2018 09:47:00 GMT+0100 (Romance Standard Time) (node:7852) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): ReferenceError: next is not defined
+Mon Mar 05 2018 09:47:00 GMT+0100 (Romance Standard Time) (node:7852) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+Mon Mar 05 2018 10:40:17 GMT+0100 (Romance Standard Time) Reasoner set as incremental.
+Mon Mar 05 2018 10:40:17 GMT+0100 (Romance Standard Time) 899 triples loaded.
+Mon Mar 05 2018 10:40:17 GMT+0100 (Romance Standard Time) Classification started.
+Mon Mar 05 2018 10:40:17 GMT+0100 (Romance Standard Time) Registering derivations to dictionary...
+Mon Mar 05 2018 10:40:17 GMT+0100 (Romance Standard Time) Registered successfully.
+Mon Mar 05 2018 10:40:17 GMT+0100 (Romance Standard Time) Classification succeeded.
+Mon Mar 05 2018 10:40:44 GMT+0100 (Romance Standard Time) 899 triples loaded.
+Mon Mar 05 2018 10:40:44 GMT+0100 (Romance Standard Time) Classification started.
+Mon Mar 05 2018 10:40:44 GMT+0100 (Romance Standard Time) Registering derivations to dictionary...
+Mon Mar 05 2018 10:40:44 GMT+0100 (Romance Standard Time) Registered successfully.
+Mon Mar 05 2018 10:40:44 GMT+0100 (Romance Standard Time) Classification succeeded.
+Mon Mar 05 2018 10:40:56 GMT+0100 (Romance Standard Time) 899 triples loaded.
+Mon Mar 05 2018 10:40:56 GMT+0100 (Romance Standard Time) Classification started.
+Mon Mar 05 2018 10:40:56 GMT+0100 (Romance Standard Time) Registering derivations to dictionary...
+Mon Mar 05 2018 10:40:56 GMT+0100 (Romance Standard Time) Registered successfully.
+Mon Mar 05 2018 10:40:56 GMT+0100 (Romance Standard Time) Classification succeeded.
+Mon Mar 05 2018 10:41:07 GMT+0100 (Romance Standard Time) 899 triples loaded.
+Mon Mar 05 2018 10:41:07 GMT+0100 (Romance Standard Time) Classification started.
+Mon Mar 05 2018 10:41:07 GMT+0100 (Romance Standard Time) Registering derivations to dictionary...
+Mon Mar 05 2018 10:41:07 GMT+0100 (Romance Standard Time) Registered successfully.
+Mon Mar 05 2018 10:41:07 GMT+0100 (Romance Standard Time) Classification succeeded.
+Mon Mar 05 2018 10:41:15 GMT+0100 (Romance Standard Time) 899 triples loaded.
+Mon Mar 05 2018 10:41:15 GMT+0100 (Romance Standard Time) Classification started.
+Mon Mar 05 2018 10:41:15 GMT+0100 (Romance Standard Time) Registering derivations to dictionary...
+Mon Mar 05 2018 10:41:15 GMT+0100 (Romance Standard Time) Registered successfully.
+Mon Mar 05 2018 10:41:15 GMT+0100 (Romance Standard Time) Classification succeeded.
+Mon Mar 05 2018 10:45:02 GMT+0100 (Romance Standard Time) Reasoner set as incremental.
+Mon Mar 05 2018 10:45:02 GMT+0100 (Romance Standard Time) 899 triples loaded.
+Mon Mar 05 2018 10:45:02 GMT+0100 (Romance Standard Time) Classification started.
+Mon Mar 05 2018 10:45:02 GMT+0100 (Romance Standard Time) Registering derivations to dictionary...
+Mon Mar 05 2018 10:45:02 GMT+0100 (Romance Standard Time) Registered successfully.
+Mon Mar 05 2018 10:45:02 GMT+0100 (Romance Standard Time) Classification succeeded.

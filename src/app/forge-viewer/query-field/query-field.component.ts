@@ -49,6 +49,7 @@ export class QueryFieldComponent {
   @Output() queryResult = new EventEmitter<Object>();
   @Output() returnedURIs = new EventEmitter<string[]>();
   @Output() queryTime = new EventEmitter<number>();
+  @Output() queryType = new EventEmitter<string>();
 
   constructor(
     private tss: TriplestoreService,
@@ -64,7 +65,10 @@ export class QueryFieldComponent {
 
   performQuery(){
     var start: any = new Date();
-    this.tss.getQuery(this.query, 'select', this.reasoning, this.filePaths)
+    var queryType = this.tss.getQuerytype(this.query);
+    this.queryType.emit(queryType);
+    
+    this.tss.getQuery(this.query, this.reasoning, this.filePaths)
       .subscribe(res => {
         this.queryResult.emit(res);
         

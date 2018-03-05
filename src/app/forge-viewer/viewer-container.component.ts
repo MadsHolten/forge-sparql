@@ -26,6 +26,7 @@ export class ViewerContainerComponent implements OnInit {
     public queryResult: Object;     //holds the query result returned by the query field
     public filterByURIs: string[];  //holds the URIs contained in the query result returned by the query field
     public queryTime: number;       //holds the time it took to perform the query
+    public queryType: string        //holds type of query
 
     // Parameters retrieved from Forge API
     private bucketKey;

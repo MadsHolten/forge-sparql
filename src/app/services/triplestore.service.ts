@@ -1,6 +1,8 @@
 import { Injectable }   from '@angular/core';
 import { HttpClient, HttpHeaders }   from '@angular/common/http';
 
+import 'rxjs/add/operator/map';
+
 @Injectable()
 export class TriplestoreService {
 
@@ -16,13 +18,16 @@ export class TriplestoreService {
     }
 
     //Get query
-    public getQuery(query, queryType?, reasoning?, filePaths?) {
+    public getQuery(query, reasoning?, filePaths?) {
         // Change header if 'select' query requested
         var opts;
-        if(queryType == 'select'){
-            let header = new HttpHeaders().set('Accept', 'application/json');
-            this.options = { headers: header }
-        }
+
+        // Get query type
+        const queryType = this.getQuerytype(query);
+
+        // Define headers
+        let header = new HttpHeaders().set('Accept', 'application/json');
+        this.options = { headers: header }
 
         // define search parameters
         this.options.params = {query: query}
@@ -39,6 +44,24 @@ export class TriplestoreService {
         }
         
         return this.http.get('/endpoint', this.options);
+    }
+
+    public getQuerytype(query){
+        // NB! Should maybe also support ASK and DESCRIBE
+        // Get index of select and construct
+        var selIndex = query.toLowerCase().indexOf('select');
+        var consIndex = query.toLowerCase().indexOf('construct');
+    
+        // If both are found in the string, take the one with the lowest index
+        // That means that we can still allow someone to for instance query for
+        // a string that has "select" in it
+        if(selIndex != -1 && consIndex !=-1){
+          return selIndex < consIndex ? 'select' : 'construct';
+        }
+        if(selIndex != -1) return 'select';
+        if(consIndex != -1) return 'construct';
+        // If it is an insert query or something else return null
+        return null;
     }
 
 }

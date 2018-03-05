@@ -1,11 +1,12 @@
 const express = require('express');
 const queryEngine = require('../models/query-engine');
 const reasoner = require('../models/reasoner');
+const _ = require('lodash');
 
 const router = express.Router();
 
-//SPARQL endpoint
-//Get request
+// SPARQL endpoint
+// Get request
 router.get('/', (req, res, next) => {
 
     // variable to hold result
@@ -23,6 +24,7 @@ router.get('/', (req, res, next) => {
 
     // Get query
     var query = req.query.query;
+
     // Add default prefixes
     query = queryEngine.addPrefixes(query);
 
@@ -41,15 +43,26 @@ router.get('/', (req, res, next) => {
         reasoner.queryEngine(query,sources).then(qRes => {
             return sendResult(qRes);
         }).catch(err => {
+            console.log(err);
             res.status(500).send(err);
         })
     }
 
     // Return result as either turtle or JSON
-    var sendResult = function(result){
+    var sendResult = (result) => {
         if(accept == 'application/json' || accept == 'application/sparql-results+json'){
             res.set('Content-Type', 'application/sparql-results+json');
-            var formatted = queryEngine.sparqlJSON(result);
+
+            // Format
+            var queryType = queryEngine.getQuerytype(query);
+
+            if(queryType == 'select'){
+                var formatted = queryEngine.sparqlJSON(result);
+            }else{
+                var data = _.map(result.triples, x => _.mapValues(x, y => y.nominalValue));
+                var formatted = {data: data, status: 200};
+            }
+
             res.status(formatted.status).send(formatted.data);
         }else if(accept == 'text/turtle'){
             res.set('Content-Type', 'text/turtle');
@@ -59,19 +72,19 @@ router.get('/', (req, res, next) => {
 
 });
 
-// //SPARQL endpoint
-// //Post request
-// router.post('/', (req, res, next) => {
-//     if(req.body && req.body.query){
-//         var query = req.body.query;
-//     }else{
-//         var query = req.query.query;
-//     }
-//     if(!query) {
-//         res.status(400).send('Please specify a query');
-//         return;
-//     }
-//     qe.queryEngine(query).then(qRes => res.send(qRes));
-// });
+//UPDATE endpoint
+//Post request
+router.post('/update', (req, res, next) => {
+    if(req.body && req.body.query){
+        var query = req.body.query;
+    }else{
+        var query = req.query.query;
+    }
+    if(!query) {
+        res.status(400).send('Please specify a query');
+        return;
+    }
+    qe.queryEngine(query).then(qRes => res.send(qRes));
+});
 
 module.exports = router ;

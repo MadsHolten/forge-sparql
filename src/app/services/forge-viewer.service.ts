@@ -24,18 +24,18 @@ export class ForgeViewerService {
                 else {
                 // This is some workaround in order to return only elements. 
                 // It is not the most correct approach and might break in the future
-                var spaceID = _.filter(dbIDs, dbID => {
-                    //What properties are present on the node?
-                    this.getProperties(dbID,viewer).then(propData => {
-                    var pd: any = _.clone(propData);
-                    // Check if it is a room
-                    var findit = pd.properties.filter(item => {
-                        return (item.displayName === 'Type' 
-                        && item.displayValue === 'Rooms'); 
-                    });
-                    if(findit.length > 0) resolve(dbID);
-                    })
-                })
+                    // var spaceID = _.filter(dbIDs, dbID => {
+                    //     //What properties are present on the node?
+                    //     this.getProperties(dbID,viewer).then(propData => {
+                    //     var pd: any = _.clone(propData);
+                    //     // Check if it is a room
+                    //     var findit = pd.properties.filter(item => {
+                    //         return (item.displayName === 'Type' 
+                    //         && item.displayValue === 'Rooms'); 
+                    //     });
+                    //     if(findit.length > 0) resolve(dbID);
+                    //     })
+                    // })
                 }
             }, err => {
                 reject(err);
