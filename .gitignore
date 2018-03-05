@@ -41,7 +41,3 @@ yarn-error.log
 # System Files
 .DS_Store
 Thumbs.db
-
-# Heroku
-push_heroku.md
-/heroku

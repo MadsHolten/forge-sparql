@@ -57,6 +57,7 @@ export class QueryResultGraphComponent implements OnInit {
   @ViewChild('chart') private chartContainer: ElementRef;
   @Input() private data: Array<any>;
   @Input() public height: number;
+  @Input() public queryTime: number;
   // @Input() private width: number;
   
   constructor() { }

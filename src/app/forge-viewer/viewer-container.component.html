@@ -38,7 +38,7 @@
                         <div class="right">
                             <!-- Query Results -->
                             <query-result-table *ngIf="queryType == 'select' && queryResult" [queryResult]="queryResult" [queryTime]="queryTime"></query-result-table>
-                            <query-result-graph *ngIf="queryType == 'construct' && queryResult" [data]="queryResult" [height]="400"></query-result-graph>
+                            <query-result-graph *ngIf="queryType == 'construct' && queryResult" [data]="queryResult" [height]="400" [queryTime]="queryTime"></query-result-graph>
                         </div>
                     </div>
                 </vertical-split-pane>
