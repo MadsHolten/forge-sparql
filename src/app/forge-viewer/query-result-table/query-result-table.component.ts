@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges, OnDestroy } from '@angular/core';
 import { DataSource } from '@angular/cdk/collections';
 import { Observable } from 'rxjs/Observable';
 import * as _ from 'underscore';
@@ -13,7 +13,7 @@ import 'rxjs/add/observable/of';
   templateUrl: 'query-result-table.component.html'
 })
 
-export class QueryResultTableComponent implements OnChanges{
+export class QueryResultTableComponent implements OnChanges, OnDestroy{
 
   @Input() queryResult: Object;
   @Input() queryTime: number;
@@ -42,6 +42,11 @@ export class QueryResultTableComponent implements OnChanges{
       //Load data source
       this.dataSource = new ExampleDataSource();
     }
+  }
+
+  // When instance is destroyed
+  ngOnDestroy() {
+    this.dataSource = null;
   }
 
   displayedColumns;
