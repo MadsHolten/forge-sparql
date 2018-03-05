@@ -67,7 +67,7 @@ rdfp.loadMultiple = (store, paths) => {
     });
 
     // Load data in store
-    Promise.all(promises)
+    return Promise.all(promises)
         .then(fileContent => {
             // Concatenate content of turtle-files
             triples = ''
