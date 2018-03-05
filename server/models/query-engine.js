@@ -18,7 +18,7 @@ qe.addPrefixes = (query) => {
     return fullQuery;
 }
 
-qe.queryEngine = async (query,sources) => {
+qe.queryEngine = (query,sources) => {
     // If sources is undefined, use default
     if(typeof sources === "undefined") {
         var paths = [path];
@@ -33,15 +33,17 @@ qe.queryEngine = async (query,sources) => {
     }
 
     // Create a store
-    var store = await rdfp.createStore();
-
-    // load triples in store
-    await rdfp.loadMultiple(store,paths);
-
-    // Execute query on data
-    var res = await rdfp.executeQuery(store, query);
-
-    return res;
+    var store;
+    return rdfp.createStore()
+        .then(s => {
+            store = s;
+            // load triples in store
+            return rdfp.loadMultiple(store,paths);
+        })
+        .then(() => {
+            // Execute query on data
+            return rdfp.executeQuery(store, query);
+        })
 }
 
 qe.getTriples = () => {

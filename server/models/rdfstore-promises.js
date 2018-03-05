@@ -42,7 +42,7 @@ rdfp.executeQuery = (store, query, accept) => {
 }
 
 // Function to load multiple triples in store
-rdfp.loadMultiple = async (store, paths) => {
+rdfp.loadMultiple = (store, paths) => {
     
     var promises = paths.map(path => {
         // If the string contains http, use the full address
@@ -67,16 +67,16 @@ rdfp.loadMultiple = async (store, paths) => {
     });
 
     // Load data in store
-    var fileContent = await Promise.all(promises);
+    Promise.all(promises)
+        .then(fileContent => {
+            // Concatenate content of turtle-files
+            triples = ''
+            fileContent.forEach(data => {
+                triples+=data+'\n';
+            })
 
-    // Concatenate content of turtle-files
-    triples = ''
-    fileContent.forEach(data => {
-        triples+=data+'\n';
-    })
-
-    await rdfp.loadTriplesInStore(store, triples);
-    return;
+            return rdfp.loadTriplesInStore(store, triples);
+        })
 
 }
 
